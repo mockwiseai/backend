@@ -17,5 +17,6 @@ export const config = {
       apiUrl: process.env.JUDGE0_API_URL,
       apiKey: process.env.RAPID_API_KEY
     }
-  }
+  },
+  frontendUrl: process.env.FRONTEND_URL || 'http://localhost:3000',
 };
