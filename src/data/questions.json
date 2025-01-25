@@ -1,0 +1,3861 @@
+[
+    {
+    
+    "title": "Two Sum",
+    "difficulty": "easy",
+    "description": "Given an array of integers nums and an integer target, return indices of two numbers that add up to target. Each input has exactly one solution.",
+    "examples": [{
+        "input": "nums = [2,7,11,15], target = 9",
+        "output": "[0,1]",
+        "explanation": "Because nums[0] + nums[1] == 9"
+    }],
+    "starterCode": {
+        "python": "def twoSum(nums: List[int], target: int) -> List[int]:\n    # Write your code here\n    pass",
+        "javascript": "function twoSum(nums, target) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        // Write your code here\n        return new int[]{};\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<int> twoSum(vector<int>& nums, int target) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[2,7,11,15], 9",
+            "output": "[0,1]",
+            "isHidden": false
+        },
+        {
+            "input": "[3,2,4], 6",
+            "output": "[1,2]",
+            "isHidden": false
+        },
+        {
+            "input": "[3,3], 6",
+            "output": "[0,1]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Reverse Bits",
+    "difficulty": "easy",
+    "description": "Reverse bits of a given 32 bits unsigned integer. Return the reversed number.",
+    "examples": [{
+        "input": "n = 00000010100101000001111010011100",
+        "output": "964176192",
+        "explanation": "The reversed binary is 00111001011110000010100101000000"
+    }],
+    "starterCode": {
+        "python": "def reverseBits(n: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function reverseBits(n) {\n    // Write your code here\n    return 0;\n}",
+        "java": "public class Solution {\n    public int reverseBits(int n) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    uint32_t reverseBits(uint32_t n) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "00000010100101000001111010011100",
+            "output": "964176192",
+            "isHidden": false
+        },
+        {
+            "input": "11111111111111111111111111111101",
+            "output": "3221225471",
+            "isHidden": false
+        },
+        {
+            "input": "00000000000000000000000000000001",
+            "output": "2147483648",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Number of 1 Bits",
+    "difficulty": "easy",
+    "description": "Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).",
+    "examples": [{
+        "input": "n = 00000000000000000000000000001011",
+        "output": "3",
+        "explanation": "The input binary string has three '1' bits"
+    }],
+    "starterCode": {
+        "python": "def hammingWeight(n: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function hammingWeight(n) {\n    // Write your code here\n    return 0;\n}",
+        "java": "public class Solution {\n    public int hammingWeight(int n) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int hammingWeight(uint32_t n) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "00000000000000000000000000001011",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "00000000000000000000000010000000",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "11111111111111111111111111111111",
+            "output": "32",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Happy Number",
+    "difficulty": "easy",
+    "description": "Write an algorithm to determine if a number n is happy. A happy number is a number that reaches 1 after repeatedly summing the squares of its digits.",
+    "examples": [{
+        "input": "n = 19",
+        "output": "true",
+        "explanation": "1² + 9² = 82, 8² + 2² = 68, 6² + 8² = 100, 1² + 0² + 0² = 1"
+    }],
+    "starterCode": {
+        "python": "def isHappy(n: int) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function isHappy(n) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean isHappy(int n) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool isHappy(int n) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "19",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "2",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "7",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Valid Palindrome",
+    "difficulty": "easy",
+    "description": "Given a string s, return true if it is a palindrome considering only alphanumeric characters and ignoring cases.",
+    "examples": [{
+        "input": "s = 'A man, a plan, a canal: Panama'",
+        "output": "true",
+        "explanation": "After removing non-alphanumeric characters and converting to lowercase: 'amanaplanacanalpanama' is a palindrome"
+    }],
+    "starterCode": {
+        "python": "def isPalindrome(s: str) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function isPalindrome(s) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean isPalindrome(String s) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool isPalindrome(string s) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "A man, a plan, a canal: Panama",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "race a car",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "0P",
+            "output": "false",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Single Number",
+    "difficulty": "easy",
+    "description": "Given a non-empty array of integers where every element appears twice except for one, find that single element.",
+    "examples": [{
+        "input": "nums = [2,2,1]",
+        "output": "1",
+        "explanation": "Every element appears twice except for 1"
+    }],
+    "starterCode": {
+        "python": "def singleNumber(nums: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function singleNumber(nums) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int singleNumber(int[] nums) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int singleNumber(vector<int>& nums) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[2,2,1]",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "[4,1,2,1,2]",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "[1]",
+            "output": "1",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Linked List Cycle",
+    "difficulty": "easy",
+    "description": "Given head of a linked list, determine if the linked list has a cycle in it. Return true if there is a cycle, false otherwise.",
+    "examples": [{
+        "input": "head = [3,2,0,-4], pos = 1",
+        "output": "true",
+        "explanation": "Linked list has a cycle where tail connects to node at position 1"
+    }],
+    "starterCode": {
+        "python": "def hasCycle(head: ListNode) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function hasCycle(head) {\n    // Write your code here\n    return false;\n}",
+        "java": "public class Solution {\n    public boolean hasCycle(ListNode head) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool hasCycle(ListNode *head) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "head = [3,2,0,-4], pos = 1",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "head = [1,2], pos = 0",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "head = [1], pos = -1",
+            "output": "false",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Contains Duplicate",
+    "difficulty": "easy",
+    "description": "Given an integer array nums, return true if any value appears at least twice, and false if all elements are distinct.",
+    "examples": [{
+        "input": "nums = [1,2,3,1]",
+        "output": "true",
+        "explanation": "1 appears twice in the array"
+    }],
+    "starterCode": {
+        "python": "def containsDuplicate(nums: List[int]) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function containsDuplicate(nums) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean containsDuplicate(int[] nums) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool containsDuplicate(vector<int>& nums) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,2,3,1]",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2,3,4]",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "[1,1,1,3,3,4,3,2,4,2]",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Missing Number",
+    "difficulty": "easy",
+    "description": "Given an array nums containing n distinct numbers in range [0, n], return the only number in the range that is missing from the array.",
+    "examples": [{
+        "input": "nums = [3,0,1]",
+        "output": "2",
+        "explanation": "n = 3 since array length is 3. Only 2 is missing from [0,1,2,3]"
+    }],
+    "starterCode": {
+        "python": "def missingNumber(nums: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function missingNumber(nums) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int missingNumber(int[] nums) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int missingNumber(vector<int>& nums) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[3,0,1]",
+            "output": "2",
+            "isHidden": false
+        },
+        {
+            "input": "[0,1]",
+            "output": "2",
+            "isHidden": false
+        },
+        {
+            "input": "[9,6,4,2,3,5,7,0,1]",
+            "output": "8",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Counting Bits",
+    "difficulty": "easy",
+    "description": "Given an integer n, return an array ans of length n + 1 such that for each i (0 <= i <= n), ans[i] is the number of 1's in the binary representation of i.",
+    "examples": [{
+        "input": "n = 2",
+        "output": "[0,1,1]",
+        "explanation": "0 -> 0 (0 ones), 1 -> 1 (1 one), 2 -> 10 (1 one)"
+    }],
+    "starterCode": {
+        "python": "def countBits(n: int) -> List[int]:\n    # Write your code here\n    pass",
+        "javascript": "function countBits(n) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public int[] countBits(int n) {\n        // Write your code here\n        return new int[]{};\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<int> countBits(int n) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "2",
+            "output": "[0,1,1]",
+            "isHidden": false
+        },
+        {
+            "input": "5",
+            "output": "[0,1,1,2,1,2]",
+            "isHidden": false
+        },
+        {
+            "input": "8",
+            "output": "[0,1,1,2,1,2,2,3,1]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Reverse Linked List",
+    "difficulty": "easy",
+    "description": "Given the head of a singly linked list, reverse the list and return the reversed list.",
+    "examples": [{
+        "input": "head = [1,2,3,4,5]",
+        "output": "[5,4,3,2,1]",
+        "explanation": "Reversing the linked list changes direction of all arrows"
+    }],
+    "starterCode": {
+        "python": "def reverseList(head: ListNode) -> ListNode:\n    # Write your code here\n    pass",
+        "javascript": "function reverseList(head) {\n    // Write your code here\n    return null;\n}",
+        "java": "class Solution {\n    public ListNode reverseList(ListNode head) {\n        // Write your code here\n        return null;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    ListNode* reverseList(ListNode* head) {\n        // Write your code here\n        return nullptr;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,2,3,4,5]",
+            "output": "[5,4,3,2,1]",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2]",
+            "output": "[2,1]",
+            "isHidden": false
+        },
+        {
+            "input": "[]",
+            "output": "[]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Valid Parentheses",
+    "difficulty": "easy",
+    "description": "Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. String is valid if brackets are closed in correct order.",
+    "examples": [{
+        "input": "s = '()'",
+        "output": "true",
+        "explanation": "Simple pair of parentheses is valid"
+    }],
+    "starterCode": {
+        "python": "def isValid(s: str) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function isValid(s) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean isValid(String s) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool isValid(string s) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "()",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "([)]",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "{[]}",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Valid Anagram",
+    "difficulty": "easy",
+    "description": "Given two strings s and t, return true if t is an anagram of s, and false otherwise. An anagram is a word formed by rearranging letters of another word.",
+    "examples": [{
+        "input": "s = 'anagram', t = 'nagaram'",
+        "output": "true",
+        "explanation": "Both strings use same letters in different order"
+    }],
+    "starterCode": {
+        "python": "def isAnagram(s: str, t: str) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function isAnagram(s, t) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean isAnagram(String s, String t) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool isAnagram(string s, string t) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "s = 'anagram', t = 'nagaram'",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "s = 'rat', t = 'car'",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "s = 'silent', t = 'listen'",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Invert Binary Tree",
+    "difficulty": "easy",
+    "description": "Given the root of a binary tree, invert the tree (mirror flip), and return its root. Swap every left node with its right node.",
+    "examples": [{
+        "input": "root = [4,2,7,1,3,6,9]",
+        "output": "[4,7,2,9,6,3,1]",
+        "explanation": "Each level of the tree is swapped left-to-right"
+    }],
+    "starterCode": {
+        "python": "def invertTree(root: TreeNode) -> TreeNode:\n    # Write your code here\n    pass",
+        "javascript": "function invertTree(root) {\n    // Write your code here\n    return null;\n}",
+        "java": "class Solution {\n    public TreeNode invertTree(TreeNode root) {\n        // Write your code here\n        return null;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    TreeNode* invertTree(TreeNode* root) {\n        // Write your code here\n        return nullptr;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[4,2,7,1,3,6,9]",
+            "output": "[4,7,2,9,6,3,1]",
+            "isHidden": false
+        },
+        {
+            "input": "[2,1,3]",
+            "output": "[2,3,1]",
+            "isHidden": false
+        },
+        {
+            "input": "[]",
+            "output": "[]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Merge Two Sorted Lists",
+    "difficulty": "easy",
+    "description": "Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.",
+    "examples": [{
+        "input": "l1 = [1,2,4], l2 = [1,3,4]",
+        "output": "[1,1,2,3,4,4]",
+        "explanation": "Merging creates one sorted list"
+    }],
+    "starterCode": {
+        "python": "def mergeTwoLists(l1: ListNode, l2: ListNode) -> ListNode:\n    # Write your code here\n    pass",
+        "javascript": "function mergeTwoLists(l1, l2) {\n    // Write your code here\n    return null;\n}",
+        "java": "class Solution {\n    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {\n        // Write your code here\n        return null;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    ListNode* mergeTwoLists(ListNode* l1, ListNode* l2) {\n        // Write your code here\n        return nullptr;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "l1 = [1,2,4], l2 = [1,3,4]",
+            "output": "[1,1,2,3,4,4]",
+            "isHidden": false
+        },
+        {
+            "input": "l1 = [], l2 = []",
+            "output": "[]",
+            "isHidden": false
+        },
+        {
+            "input": "l1 = [], l2 = [0]",
+            "output": "[0]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Best Time to Buy and Sell Stock",
+    "difficulty": "easy",
+    "description": "Given array prices where prices[i] is price of stock on ith day, return maximum profit from buying and selling one share of stock.",
+    "examples": [{
+        "input": "prices = [7,1,5,3,6,4]",
+        "output": "5",
+        "explanation": "Buy on day 2 (price = 1) and sell on day 5 (price = 6), profit = 6-1 = 5"
+    }],
+    "starterCode": {
+        "python": "def maxProfit(prices: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function maxProfit(prices) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int maxProfit(int[] prices) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int maxProfit(vector<int>& prices) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[7,1,5,3,6,4]",
+            "output": "5",
+            "isHidden": false
+        },
+        {
+            "input": "[7,6,4,3,1]",
+            "output": "0",
+            "isHidden": false
+        },
+        {
+            "input": "[2,4,1]",
+            "output": "2",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Climbing Stairs",
+    "difficulty": "easy",
+    "description": "You are climbing a staircase with n steps. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?",
+    "examples": [{
+        "input": "n = 3",
+        "output": "3",
+        "explanation": "Three ways: 1+1+1, 1+2, 2+1"
+    }],
+    "starterCode": {
+        "python": "def climbStairs(n: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function climbStairs(n) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int climbStairs(int n) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int climbStairs(int n) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "2",
+            "output": "2",
+            "isHidden": false
+        },
+        {
+            "input": "3",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "4",
+            "output": "5",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Same Tree",
+    "difficulty": "easy",
+    "description": "Given the roots of two binary trees p and q, check if they are the same tree. Two trees are identical if they have same structure and same nodes.",
+    "examples": [{
+        "input": "p = [1,2,3], q = [1,2,3]",
+        "output": "true",
+        "explanation": "Trees are structurally identical with same values"
+    }],
+    "starterCode": {
+        "python": "def isSameTree(p: TreeNode, q: TreeNode) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function isSameTree(p, q) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean isSameTree(TreeNode p, TreeNode q) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool isSameTree(TreeNode* p, TreeNode* q) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "p = [1,2,3], q = [1,2,3]",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "p = [1,2], q = [1,null,2]",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "p = [], q = []",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Maximum Depth of Binary Tree",
+    "difficulty": "easy",
+    "description": "Given the root of a binary tree, return its maximum depth (length of longest path from root to leaf node).",
+    "examples": [{
+        "input": "root = [3,9,20,null,null,15,7]",
+        "output": "3",
+        "explanation": "Depth is 3: root to 15 or 7 is longest path"
+    }],
+    "starterCode": {
+        "python": "def maxDepth(root: TreeNode) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function maxDepth(root) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int maxDepth(TreeNode root) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int maxDepth(TreeNode* root) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[3,9,20,null,null,15,7]",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "[1,null,2]",
+            "output": "2",
+            "isHidden": false
+        },
+        {
+            "input": "[]",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Last Stone Weight",
+    "difficulty": "easy",
+    "description": "Given array of stone weights, each turn take two heaviest stones and smash them. Return weight of last remaining stone, or 0 if no stones remain.",
+    "examples": [{
+        "input": "stones = [2,7,4,1,8,1]",
+        "output": "1",
+        "explanation": "Smash 7,8->1, then 4,2->2, then 2,1->1, last stone is 1"
+    }],
+    "starterCode": {
+        "python": "def lastStoneWeight(stones: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function lastStoneWeight(stones) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int lastStoneWeight(int[] stones) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int lastStoneWeight(vector<int>& stones) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[2,7,4,1,8,1]",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "[1]",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "[2,2]",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Balanced Binary Tree",
+    "difficulty": "easy",
+    "description": "Given a binary tree, determine if it is height-balanced (difference between depths of any two leaf nodes is at most one).",
+    "examples": [{
+        "input": "root = [3,9,20,null,null,15,7]",
+        "output": "true",
+        "explanation": "Left and right subtrees differ in height by at most 1"
+    }],
+    "starterCode": {
+        "python": "def isBalanced(root: TreeNode) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function isBalanced(root) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean isBalanced(TreeNode root) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool isBalanced(TreeNode* root) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[3,9,20,null,null,15,7]",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2,2,3,3,null,null,4,4]",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "[]",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Diameter of Binary Tree",
+    "difficulty": "easy",
+    "description": "Given the root of a binary tree, return the length of the diameter of the tree (longest path between any two nodes).",
+    "examples": [{
+        "input": "root = [1,2,3,4,5]",
+        "output": "3",
+        "explanation": "Longest path is 4->2->1->3 with length 3"
+    }],
+    "starterCode": {
+        "python": "def diameterOfBinaryTree(root: TreeNode) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function diameterOfBinaryTree(root) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int diameterOfBinaryTree(TreeNode root) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int diameterOfBinaryTree(TreeNode* root) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,2,3,4,5]",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2]",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "[1]",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Min Cost Climbing Stairs",
+    "difficulty": "easy",
+    "description": "Given cost array where cost[i] is cost of ith step, return minimum cost to reach top floor. Can start from index 0 or 1.",
+    "examples": [{
+        "input": "cost = [10,15,20]",
+        "output": "15",
+        "explanation": "Start at index 1, pay 15, and reach top with minimum cost"
+    }],
+    "starterCode": {
+        "python": "def minCostClimbingStairs(cost: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function minCostClimbingStairs(cost) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int minCostClimbingStairs(int[] cost) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int minCostClimbingStairs(vector<int>& cost) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[10,15,20]",
+            "output": "15",
+            "isHidden": false
+        },
+        {
+            "input": "[1,100,1,1,1,100,1,1,100,1]",
+            "output": "6",
+            "isHidden": false
+        },
+        {
+            "input": "[0,0,0,0]",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Kth Largest Element in a Stream",
+    "difficulty": "easy",
+    "description": "Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.",
+    "examples": [{
+        "input": "KthLargest kthLargest = new KthLargest(3, [4,5,8,2])\nkthLargest.add(3)",
+        "output": "4",
+        "explanation": "After adding 3, third largest is 4"
+    }],
+    "starterCode": {
+        "python": "class KthLargest:\n    def __init__(self, k: int, nums: List[int]):\n        # Initialize your data structure here\n        pass\n    \n    def add(self, val: int) -> int:\n        # Add value and return kth largest\n        pass",
+        "javascript": "class KthLargest {\n    constructor(k, nums) {\n        // Initialize your data structure here\n    }\n    \n    add(val) {\n        // Add value and return kth largest\n        return 0;\n    }\n}",
+        "java": "class KthLargest {\n    public KthLargest(int k, int[] nums) {\n        // Initialize your data structure here\n    }\n    \n    public int add(int val) {\n        // Add value and return kth largest\n        return 0;\n    }\n}",
+        "cpp": "class KthLargest {\npublic:\n    KthLargest(int k, vector<int>& nums) {\n        // Initialize your data structure here\n    }\n    \n    int add(int val) {\n        // Add value and return kth largest\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "k = 3, nums = [4,5,8,2], add(3)",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "k = 1, nums = [], add(1)",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "k = 2, nums = [0], add(-1)",
+            "output": "-1",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Longest Substring Without Repeating Characters",
+    "difficulty": "medium",
+    "description": "Given a string s, find the length of the longest substring without repeating characters.",
+    "examples": [{
+        "input": "s = 'abcabcbb'",
+        "output": "3",
+        "explanation": "The longest substring without repeating characters is 'abc', length is 3"
+    }],
+    "starterCode": {
+        "python": "def lengthOfLongestSubstring(s: str) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function lengthOfLongestSubstring(s) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int lengthOfLongestSubstring(String s) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int lengthOfLongestSubstring(string s) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "abcabcbb",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "bbbbb",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "pwwkew",
+            "output": "3",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Merge Intervals",
+    "difficulty": "medium",
+    "description": "Given an array of intervals where intervals[i] = [starti, endi], merge all overlapping intervals and return the non-overlapping intervals.",
+    "examples": [{
+        "input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
+        "output": "[[1,6],[8,10],[15,18]]",
+        "explanation": "[1,3] and [2,6] overlap, merge them into [1,6]"
+    }],
+    "starterCode": {
+        "python": "def merge(intervals: List[List[int]]) -> List[List[int]]:\n    # Write your code here\n    pass",
+        "javascript": "function merge(intervals) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public int[][] merge(int[][] intervals) {\n        // Write your code here\n        return new int[][]{};\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<int>> merge(vector<vector<int>>& intervals) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[1,3],[2,6],[8,10],[15,18]]",
+            "output": "[[1,6],[8,10],[15,18]]",
+            "isHidden": false
+        },
+        {
+            "input": "[[1,4],[4,5]]",
+            "output": "[[1,5]]",
+            "isHidden": false
+        },
+        {
+            "input": "[[1,4],[0,4]]",
+            "output": "[[0,4]]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "LRU Cache",
+    "difficulty": "medium",
+    "description": "Design a data structure that follows the constraints of a Least Recently Used (LRU) cache with get and put operations in O(1) time complexity.",
+    "examples": [{
+        "input": "LRUCache cache = new LRUCache(2);\ncache.put(1, 1);\ncache.put(2, 2);\ncache.get(1);",
+        "output": "1",
+        "explanation": "Returns 1 since it was just accessed"
+    }],
+    "starterCode": {
+        "python": "class LRUCache:\n    def __init__(self, capacity: int):\n        # Initialize your data structure here\n        pass\n\n    def get(self, key: int) -> int:\n        # Return value if exists, else -1\n        pass\n\n    def put(self, key: int, value: int) -> None:\n        # Update value if exists, else insert\n        pass",
+        "javascript": "class LRUCache {\n    constructor(capacity) {\n        // Initialize your data structure here\n    }\n    \n    get(key) {\n        // Return value if exists, else -1\n    }\n    \n    put(key, value) {\n        // Update value if exists, else insert\n    }\n}",
+        "java": "class LRUCache {\n    public LRUCache(int capacity) {\n        // Initialize your data structure here\n    }\n    \n    public int get(int key) {\n        // Return value if exists, else -1\n        return -1;\n    }\n    \n    public void put(int key, int value) {\n        // Update value if exists, else insert\n    }\n}",
+        "cpp": "class LRUCache {\npublic:\n    LRUCache(int capacity) {\n        // Initialize your data structure here\n    }\n    \n    int get(int key) {\n        // Return value if exists, else -1\n        return -1;\n    }\n    \n    void put(int key, int value) {\n        // Update value if exists, else insert\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "cache = LRUCache(2); cache.put(1,1); cache.put(2,2); cache.get(1);",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "cache = LRUCache(2); cache.put(1,1); cache.put(2,2); cache.put(3,3); cache.get(2);",
+            "output": "-1",
+            "isHidden": false
+        },
+        {
+            "input": "cache = LRUCache(1); cache.put(2,1); cache.get(2);",
+            "output": "1",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Number of Islands",
+    "difficulty": "medium",
+    "description": "Given a 2D grid of '1's (land) and '0's (water), count the number of islands. An island is surrounded by water and formed by connecting adjacent lands horizontally or vertically.",
+    "examples": [{
+        "input": "grid = [\n  ['1','1','0','0','0'],\n  ['1','1','0','0','0'],\n  ['0','0','1','0','0'],\n  ['0','0','0','1','1']\n]",
+        "output": "3",
+        "explanation": "There are 3 islands in the grid"
+    }],
+    "starterCode": {
+        "python": "def numIslands(grid: List[List[str]]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function numIslands(grid) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int numIslands(char[][] grid) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int numIslands(vector<vector<char>>& grid) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[['1','1','1','1','0'],['1','1','0','1','0'],['1','1','0','0','0'],['0','0','0','0','0']]",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "[['1','1','0','0','0'],['1','1','0','0','0'],['0','0','1','0','0'],['0','0','0','1','1']]",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "[['1','0','1','0','1']]",
+            "output": "3",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Min Stack",
+    "difficulty": "medium",
+    "description": "Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.",
+    "examples": [{
+        "input": "MinStack minStack = new MinStack();\nminStack.push(-2);\nminStack.push(0);\nminStack.push(-3);\nminStack.getMin();",
+        "output": "-3",
+        "explanation": "Push -2, 0, -3. getMin() returns minimum element -3"
+    }],
+    "starterCode": {
+        "python": "class MinStack:\n    def __init__(self):\n        # Initialize your data structure here\n        pass\n        \n    def push(self, val: int) -> None:\n        pass\n        \n    def pop(self) -> None:\n        pass\n        \n    def top(self) -> int:\n        pass\n        \n    def getMin(self) -> int:\n        pass",
+        "javascript": "class MinStack {\n    constructor() {\n        // Initialize your data structure here\n    }\n    \n    push(val) {\n    }\n    \n    pop() {\n    }\n    \n    top() {\n    }\n    \n    getMin() {\n    }\n}",
+        "java": "class MinStack {\n    public MinStack() {\n        // Initialize your data structure here\n    }\n    \n    public void push(int val) {\n    }\n    \n    public void pop() {\n    }\n    \n    public int top() {\n        return 0;\n    }\n    \n    public int getMin() {\n        return 0;\n    }\n}",
+        "cpp": "class MinStack {\npublic:\n    MinStack() {\n        // Initialize your data structure here\n    }\n    \n    void push(int val) {\n    }\n    \n    void pop() {\n    }\n    \n    int top() {\n        return 0;\n    }\n    \n    int getMin() {\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "MinStack minStack = new MinStack(); minStack.push(-2); minStack.push(0); minStack.push(-3); minStack.getMin();",
+            "output": "-3",
+            "isHidden": false
+        },
+        {
+            "input": "MinStack minStack = new MinStack(); minStack.push(-2); minStack.push(0); minStack.push(-3); minStack.pop(); minStack.top();",
+            "output": "0",
+            "isHidden": false
+        },
+        {
+            "input": "MinStack minStack = new MinStack(); minStack.push(0); minStack.push(1); minStack.push(0); minStack.getMin();",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Add Two Numbers",
+    "difficulty": "medium",
+    "description": "Given two non-empty linked lists representing two non-negative integers in reverse order, add the two numbers and return the sum as a linked list.",
+    "examples": [{
+        "input": "l1 = [2,4,3], l2 = [5,6,4]",
+        "output": "[7,0,8]",
+        "explanation": "342 + 465 = 807, represented as 7->0->8 in linked list"
+    }],
+    "starterCode": {
+        "python": "def addTwoNumbers(l1: ListNode, l2: ListNode) -> ListNode:\n    # Write your code here\n    pass",
+        "javascript": "function addTwoNumbers(l1, l2) {\n    // Write your code here\n    return null;\n}",
+        "java": "class Solution {\n    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {\n        // Write your code here\n        return null;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {\n        // Write your code here\n        return nullptr;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "l1 = [2,4,3], l2 = [5,6,4]",
+            "output": "[7,0,8]",
+            "isHidden": false
+        },
+        {
+            "input": "l1 = [0], l2 = [0]",
+            "output": "[0]",
+            "isHidden": false
+        },
+        {
+            "input": "l1 = [9,9,9], l2 = [1]",
+            "output": "[0,0,0,1]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Longest Palindromic Substring",
+    "difficulty": "medium",
+    "description": "Given a string s, return the longest palindromic substring in s. A string is palindromic if it reads the same forward and backward.",
+    "examples": [{
+        "input": "s = 'babad'",
+        "output": "'bab'",
+        "explanation": "'bab' is a palindrome, 'aba' is also valid answer"
+    }],
+    "starterCode": {
+        "python": "def longestPalindrome(s: str) -> str:\n    # Write your code here\n    pass",
+        "javascript": "function longestPalindrome(s) {\n    // Write your code here\n    return '';\n}",
+        "java": "class Solution {\n    public String longestPalindrome(String s) {\n        // Write your code here\n        return \"\";\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    string longestPalindrome(string s) {\n        // Write your code here\n        return \"\";\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "babad",
+            "output": "bab",
+            "isHidden": false
+        },
+        {
+            "input": "cbbd",
+            "output": "bb",
+            "isHidden": false
+        },
+        {
+            "input": "ac",
+            "output": "a",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Container With Most Water",
+    "difficulty": "medium",
+    "description": "Given n non-negative integers representing an elevation map where width=1, compute how much water the container can trap with two endpoints.",
+    "examples": [{
+        "input": "height = [1,8,6,2,5,4,8,3,7]",
+        "output": "49",
+        "explanation": "The max area is between heights 8 and 7, with area = min(8,7) * 7 = 49"
+    }],
+    "starterCode": {
+        "python": "def maxArea(height: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function maxArea(height) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int maxArea(int[] height) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int maxArea(vector<int>& height) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,8,6,2,5,4,8,3,7]",
+            "output": "49",
+            "isHidden": false
+        },
+        {
+            "input": "[1,1]",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "[4,3,2,1,4]",
+            "output": "16",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "3Sum",
+    "difficulty": "medium",
+    "description": "Given an integer array nums, return all triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, j != k, and their sum is 0.",
+    "examples": [{
+        "input": "nums = [-1,0,1,2,-1,-4]",
+        "output": "[[-1,-1,2],[-1,0,1]]",
+        "explanation": "Two triplets sum to 0: (-1,-1,2) and (-1,0,1)"
+    }],
+    "starterCode": {
+        "python": "def threeSum(nums: List[int]) -> List[List[int]]:\n    # Write your code here\n    pass",
+        "javascript": "function threeSum(nums) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<List<Integer>> threeSum(int[] nums) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<int>> threeSum(vector<int>& nums) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[-1,0,1,2,-1,-4]",
+            "output": "[[-1,-1,2],[-1,0,1]]",
+            "isHidden": false
+        },
+        {
+            "input": "[]",
+            "output": "[]",
+            "isHidden": false
+        },
+        {
+            "input": "[0]",
+            "output": "[]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Letter Combinations of a Phone Number",
+    "difficulty": "medium",
+    "description": "Given a string containing digits from 2-9, return all possible letter combinations that the number could represent according to phone keypad mapping.",
+    "examples": [{
+        "input": "digits = '23'",
+        "output": "['ad','ae','af','bd','be','bf','cd','ce','cf']",
+        "explanation": "2 maps to abc, 3 maps to def. All combinations are listed"
+    }],
+    "starterCode": {
+        "python": "def letterCombinations(digits: str) -> List[str]:\n    # Write your code here\n    pass",
+        "javascript": "function letterCombinations(digits) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<String> letterCombinations(String digits) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<string> letterCombinations(string digits) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "23",
+            "output": "['ad','ae','af','bd','be','bf','cd','ce','cf']",
+            "isHidden": false
+        },
+        {
+            "input": "",
+            "output": "[]",
+            "isHidden": false
+        },
+        {
+            "input": "2",
+            "output": "['a','b','c']",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Remove Nth Node From End of List",
+    "difficulty": "medium",
+    "description": "Given a linked list, remove the nth node from the end of the list and return its head. Do it in one pass.",
+    "examples": [{
+        "input": "head = [1,2,3,4,5], n = 2",
+        "output": "[1,2,3,5]",
+        "explanation": "After removing the second node from the end, the linked list becomes 1->2->3->5"
+    }],
+    "starterCode": {
+        "python": "def removeNthFromEnd(head: ListNode, n: int) -> ListNode:\n    # Write your code here\n    pass",
+        "javascript": "function removeNthFromEnd(head, n) {\n    // Write your code here\n    return null;\n}",
+        "java": "class Solution {\n    public ListNode removeNthFromEnd(ListNode head, int n) {\n        // Write your code here\n        return null;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    ListNode* removeNthFromEnd(ListNode* head, int n) {\n        // Write your code here\n        return nullptr;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "head = [1,2,3,4,5], n = 2",
+            "output": "[1,2,3,5]",
+            "isHidden": false
+        },
+        {
+            "input": "head = [1], n = 1",
+            "output": "[]",
+            "isHidden": false
+        },
+        {
+            "input": "head = [1,2], n = 1",
+            "output": "[1]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Generate Parentheses",
+    "difficulty": "medium",
+    "description": "Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.",
+    "examples": [{
+        "input": "n = 3",
+        "output": "['((()))','(()())','(())()','()(())','()()()']",
+        "explanation": "All valid combinations of 3 pairs of parentheses"
+    }],
+    "starterCode": {
+        "python": "def generateParenthesis(n: int) -> List[str]:\n    # Write your code here\n    pass",
+        "javascript": "function generateParenthesis(n) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<String> generateParenthesis(int n) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<string> generateParenthesis(int n) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "3",
+            "output": "['((()))','(()())','(())()','()(())','()()()']",
+            "isHidden": false
+        },
+        {
+            "input": "1",
+            "output": "['()']",
+            "isHidden": false
+        },
+        {
+            "input": "4",
+            "output": "['(((())))','((()()))','((())())','((()))()','(()(()))','(()()())','(()())()','(())(())','(())()()','()((()))','()(()())','()(())()','()()(())','()()()()']",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Search in Rotated Sorted Array",
+    "difficulty": "medium",
+    "description": "Given a rotated sorted array nums and a target value, return the index of target if it's in nums, or -1 if not found.",
+    "examples": [{
+        "input": "nums = [4,5,6,7,0,1,2], target = 0",
+        "output": "4",
+        "explanation": "0 is found at index 4"
+    }],
+    "starterCode": {
+        "python": "def search(nums: List[int], target: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function search(nums, target) {\n    // Write your code here\n    return -1;\n}",
+        "java": "class Solution {\n    public int search(int[] nums, int target) {\n        // Write your code here\n        return -1;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int search(vector<int>& nums, int target) {\n        // Write your code here\n        return -1;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "nums = [4,5,6,7,0,1,2], target = 0",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "nums = [4,5,6,7,0,1,2], target = 3",
+            "output": "-1",
+            "isHidden": false
+        },
+        {
+            "input": "nums = [1], target = 1",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Valid Sudoku",
+    "difficulty": "medium",
+    "description": "Determine if a 9x9 Sudoku board is valid. Only filled cells need to be validated according to Sudoku rules.",
+    "examples": [{
+        "input": "board = [['5','3','.','.','7','.','.','.','.'],['6','.','.','1','9','5','.','.','.'],['.','9','8','.','.','.','.','6','.'],['8','.','.','.','6','.','.','.','3'],['4','.','.','8','.','3','.','.','1'],['7','.','.','.','2','.','.','.','6'],['.','6','.','.','.','.','2','8','.'],['.','.','.','4','1','9','.','.','5'],['.','.','.','.','8','.','.','7','9']]",
+        "output": "true",
+        "explanation": "The board is valid according to Sudoku rules"
+    }],
+    "starterCode": {
+        "python": "def isValidSudoku(board: List[List[str]]) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function isValidSudoku(board) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean isValidSudoku(char[][] board) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool isValidSudoku(vector<vector<char>>& board) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[['5','3','.','.','7','.','.','.','.'],['6','.','.','1','9','5','.','.','.'],['.','.','8','.','.','.','.','6','.'],['8','.','.','.','6','.','.','.','3'],['4','.','.','8','.','3','.','.','1'],['7','.','.','.','2','.','.','.','6'],['.','6','.','.','.','.','2','8','.'],['.','.','.','4','1','9','.','.','5'],['.','.','.','.','8','.','.','7','9']]",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "[['8','3','.','.','7','.','.','.','.'],['6','.','.','1','9','5','.','.','.'],['.','.','8','.','.','.','.','6','.'],['8','.','.','.','6','.','.','.','3'],['4','.','.','8','.','3','.','.','1'],['7','.','.','.','2','.','.','.','6'],['.','6','.','.','.','.','2','8','.'],['.','.','.','4','1','9','.','.','5'],['.','.','.','.','8','.','.','7','9']]",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "[['.','.','.','.','.','.','.','.','.'],['.','.','.','.','.','.','.','.','.'],['.','.','.','.','.','.','.','.','.'],['.','.','.','.','.','.','.','.','.'],['.','.','.','.','.','.','.','.','.'],['.','.','.','.','.','.','.','.','.'],['.','.','.','.','.','.','.','.','.'],['.','.','.','.','.','.','.','.','.'],['.','.','.','.','.','.','.','.','.']",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Combination Sum",
+    "difficulty": "medium",
+    "description": "Given an array of distinct integers candidates and a target integer target, return a list of all unique combinations where chosen numbers sum to target.",
+    "examples": [{
+        "input": "candidates = [2,3,6,7], target = 7",
+        "output": "[[2,2,3],[7]]",
+        "explanation": "2+2+3=7 and 7=7 are the only combinations"
+    }],
+    "starterCode": {
+        "python": "def combinationSum(candidates: List[int], target: int) -> List[List[int]]:\n    # Write your code here\n    pass",
+        "javascript": "function combinationSum(candidates, target) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<List<Integer>> combinationSum(int[] candidates, int target) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<int>> combinationSum(vector<int>& candidates, int target) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "candidates = [2,3,6,7], target = 7",
+            "output": "[[2,2,3],[7]]",
+            "isHidden": false
+        },
+        {
+            "input": "candidates = [2], target = 1",
+            "output": "[]",
+            "isHidden": false
+        },
+        {
+            "input": "candidates = [2,3,5], target = 8",
+            "output": "[[2,2,2,2],[2,3,3],[3,5]]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Combination Sum II",
+    "difficulty": "medium",
+    "description": "Given a collection of candidate numbers and a target number, find all unique combinations where candidate numbers sum to target. Each number may only be used once.",
+    "examples": [{
+        "input": "candidates = [10,1,2,7,6,1,5], target = 8",
+        "output": "[[1,1,6],[1,2,5],[1,7],[2,6]]",
+        "explanation": "These are all possible combinations that sum to 8"
+    }],
+    "starterCode": {
+        "python": "def combinationSum2(candidates: List[int], target: int) -> List[List[int]]:\n    # Write your code here\n    pass",
+        "javascript": "function combinationSum2(candidates, target) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<List<Integer>> combinationSum2(int[] candidates, int target) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "candidates = [10,1,2,7,6,1,5], target = 8",
+            "output": "[[1,1,6],[1,2,5],[1,7],[2,6]]",
+            "isHidden": false
+        },
+        {
+            "input": "candidates = [2,5,2,1,2], target = 5",
+            "output": "[[1,2,2],[5]]",
+            "isHidden": false
+        },
+        {
+            "input": "candidates = [1,1,1,1,1], target = 3",
+            "output": "[[1,1,1]]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Multiply Strings",
+    "difficulty": "medium",
+    "description": "Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2, also represented as a string.",
+    "examples": [{
+        "input": "num1 = '2', num2 = '3'",
+        "output": "'6'",
+        "explanation": "2 * 3 = 6"
+    }],
+    "starterCode": {
+        "python": "def multiply(num1: str, num2: str) -> str:\n    # Write your code here\n    pass",
+        "javascript": "function multiply(num1, num2) {\n    // Write your code here\n    return '';\n}",
+        "java": "class Solution {\n    public String multiply(String num1, String num2) {\n        // Write your code here\n        return \"\";\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    string multiply(string num1, string num2) {\n        // Write your code here\n        return \"\";\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "num1 = '2', num2 = '3'",
+            "output": "'6'",
+            "isHidden": false
+        },
+        {
+            "input": "num1 = '123', num2 = '456'",
+            "output": "'56088'",
+            "isHidden": false
+        },
+        {
+            "input": "num1 = '999', num2 = '999'",
+            "output": "'998001'",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Jump Game II",
+    "difficulty": "medium",
+    "description": "Given an array of non-negative integers nums, you are initially positioned at index 0. Each element represents your maximum jump length at that position. Return minimum jumps to reach the last index.",
+    "examples": [{
+        "input": "nums = [2,3,1,1,4]",
+        "output": "2",
+        "explanation": "Jump 1 step from index 0 to 1, then 3 steps to last index. Total 2 jumps."
+    }],
+    "starterCode": {
+        "python": "def jump(nums: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function jump(nums) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int jump(int[] nums) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int jump(vector<int>& nums) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[2,3,1,1,4]",
+            "output": "2",
+            "isHidden": false
+        },
+        {
+            "input": "[2,3,0,1,4]",
+            "output": "2",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2,3]",
+            "output": "2",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Permutations",
+    "difficulty": "medium",
+    "description": "Given an array nums of distinct integers, return all possible permutations. You can return the answer in any order.",
+    "examples": [{
+        "input": "nums = [1,2,3]",
+        "output": "[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]",
+        "explanation": "All possible permutations of the array"
+    }],
+    "starterCode": {
+        "python": "def permute(nums: List[int]) -> List[List[int]]:\n    # Write your code here\n    pass",
+        "javascript": "function permute(nums) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<List<Integer>> permute(int[] nums) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<int>> permute(vector<int>& nums) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,2,3]",
+            "output": "[[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]",
+            "isHidden": false
+        },
+        {
+            "input": "[0,1]",
+            "output": "[[0,1],[1,0]]",
+            "isHidden": false
+        },
+        {
+            "input": "[1]",
+            "output": "[[1]]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Rotate Image",
+    "difficulty": "medium",
+    "description": "You are given an n x n 2D matrix representing an image. Rotate the image by 90 degrees (clockwise) in-place.",
+    "examples": [{
+        "input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
+        "output": "[[7,4,1],[8,5,2],[9,6,3]]",
+        "explanation": "Rotate the matrix by 90 degrees clockwise"
+    }],
+    "starterCode": {
+        "python": "def rotate(matrix: List[List[int]]) -> None:\n    # Write your code here\n    pass",
+        "javascript": "function rotate(matrix) {\n    // Write your code here\n}",
+        "java": "class Solution {\n    public void rotate(int[][] matrix) {\n        // Write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    void rotate(vector<vector<int>>& matrix) {\n        // Write your code here\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[1,2,3],[4,5,6],[7,8,9]]",
+            "output": "[[7,4,1],[8,5,2],[9,6,3]]",
+            "isHidden": false
+        },
+        {
+            "input": "[[5,1,9,11],[2,4,8,10],[13,3,6,7],[15,14,12,16]]",
+            "output": "[[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]",
+            "isHidden": false
+        },
+        {
+            "input": "[[1]]",
+            "output": "[[1]]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Group Anagrams",
+    "difficulty": "medium",
+    "description": "Given an array of strings strs, group the anagrams together and return them in any order. An anagram is a word formed by rearranging letters of another word.",
+    "examples": [{
+        "input": "strs = ['eat','tea','tan','ate','nat','bat']",
+        "output": "[['bat'],['nat','tan'],['ate','eat','tea']]",
+        "explanation": "Group words that are anagrams of each other"
+    }],
+    "starterCode": {
+        "python": "def groupAnagrams(strs: List[str]) -> List[List[str]]:\n    # Write your code here\n    pass",
+        "javascript": "function groupAnagrams(strs) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<List<String>> groupAnagrams(String[] strs) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<string>> groupAnagrams(vector<string>& strs) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "['eat','tea','tan','ate','nat','bat']",
+            "output": "[['bat'],['nat','tan'],['ate','eat','tea']]",
+            "isHidden": false
+        },
+        {
+            "input": "['']",
+            "output": "[['']]",
+            "isHidden": false
+        },
+        {
+            "input": "['a']",
+            "output": "[['a']]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Pow(x, n)",
+    "difficulty": "medium",
+    "description": "Implement pow(x, n), which calculates x raised to the power n (i.e., x^n). Handle both positive and negative exponents.",
+    "examples": [{
+        "input": "x = 2.00000, n = 10",
+        "output": "1024.00000",
+        "explanation": "2^10 = 1024"
+    }],
+    "starterCode": {
+        "python": "def myPow(x: float, n: int) -> float:\n    # Write your code here\n    pass",
+        "javascript": "function myPow(x, n) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public double myPow(double x, int n) {\n        // Write your code here\n        return 0.0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    double myPow(double x, int n) {\n        // Write your code here\n        return 0.0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "x = 2.00000, n = 10",
+            "output": "1024.00000",
+            "isHidden": false
+        },
+        {
+            "input": "x = 2.10000, n = 3",
+            "output": "9.26100",
+            "isHidden": false
+        },
+        {
+            "input": "x = 2.00000, n = -2",
+            "output": "0.28000",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Spiral Matrix",
+    "difficulty": "medium",
+    "description": "Given an m x n matrix, return all elements of the matrix in spiral order (clockwise starting from top left).",
+    "examples": [{
+        "input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
+        "output": "[1,2,3,6,9,8,7,4,5]",
+        "explanation": "Traverse matrix in spiral order"
+    }],
+    "starterCode": {
+        "python": "def spiralOrder(matrix: List[List[int]]) -> List[int]:\n    # Write your code here\n    pass",
+        "javascript": "function spiralOrder(matrix) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<Integer> spiralOrder(int[][] matrix) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<int> spiralOrder(vector<vector<int>>& matrix) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[1,2,3],[4,5,6],[7,8,9]]",
+            "output": "[1,2,3,6,9,8,7,4,5]",
+            "isHidden": false
+        },
+        {
+            "input": "[[1,2,3,4],[5,6,7,8],[9,10,11,12]]",
+            "output": "[1,2,3,4,8,12,11,10,9,5,6,7]",
+            "isHidden": false
+        },
+        {
+            "input": "[[1]]",
+            "output": "[1]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Jump Game",
+    "difficulty": "medium",
+    "description": "Given an array of non-negative integers nums, you are initially at the first index. Each element represents your maximum jump length at that position. Determine if you can reach the last index.",
+    "examples": [{
+        "input": "nums = [2,3,1,1,4]",
+        "output": "true",
+        "explanation": "Jump 1 step to index 1, then 3 steps to last index"
+    }],
+    "starterCode": {
+        "python": "def canJump(nums: List[int]) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function canJump(nums) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean canJump(int[] nums) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool canJump(vector<int>& nums) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[2,3,1,1,4]",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "[3,2,1,0,4]",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "[0]",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Insert Interval",
+    "difficulty": "medium",
+    "description": "Given a set of non-overlapping intervals and a new interval, insert the new interval and merge if necessary. Return the new set of intervals.",
+    "examples": [{
+        "input": "intervals = [[1,3],[6,9]], newInterval = [2,5]",
+        "output": "[[1,5],[6,9]]",
+        "explanation": "Interval [2,5] overlaps with [1,3], merge them"
+    }],
+    "starterCode": {
+        "python": "def insert(intervals: List[List[int]], newInterval: List[int]) -> List[List[int]]:\n    # Write your code here\n    pass",
+        "javascript": "function insert(intervals, newInterval) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public int[][] insert(int[][] intervals, int[] newInterval) {\n        // Write your code here\n        return new int[][]{};\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "intervals = [[1,3],[6,9]], newInterval = [2,5]",
+            "output": "[[1,5],[6,9]]",
+            "isHidden": false
+        },
+        {
+            "input": "intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8]",
+            "output": "[[1,2],[3,10],[12,16]]",
+            "isHidden": false
+        },
+        {
+            "input": "intervals = [], newInterval = [5,7]",
+            "output": "[[5,7]]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Unique Paths",
+    "difficulty": "medium",
+    "description": "Given dimensions m and n, return the number of unique paths to reach bottom right corner starting from top left, moving only down or right.",
+    "examples": [{
+        "input": "m = 3, n = 7",
+        "output": "28",
+        "explanation": "There are 28 unique paths from top-left to bottom-right"
+    }],
+    "starterCode": {
+        "python": "def uniquePaths(m: int, n: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function uniquePaths(m, n) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int uniquePaths(int m, int n) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int uniquePaths(int m, int n) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "m = 3, n = 7",
+            "output": "28",
+            "isHidden": false
+        },
+        {
+            "input": "m = 3, n = 2",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "m = 7, n = 3",
+            "output": "28",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Set Matrix Zeroes",
+    "difficulty": "medium",
+    "description": "Given a matrix, if an element is 0, set its entire row and column to 0. Do it in-place with constant extra space.",
+    "examples": [{
+        "input": "matrix = [[1,1,1],[1,0,1],[1,1,1]]",
+        "output": "[[1,0,1],[0,0,0],[1,0,1]]",
+        "explanation": "The element at (1,1) is 0, so set its row and column to 0"
+    }],
+    "starterCode": {
+        "python": "def setZeroes(matrix: List[List[int]]) -> None:\n    # Write your code here\n    pass",
+        "javascript": "function setZeroes(matrix) {\n    // Write your code here\n}",
+        "java": "class Solution {\n    public void setZeroes(int[][] matrix) {\n        // Write your code here\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    void setZeroes(vector<vector<int>>& matrix) {\n        // Write your code here\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[1,1,1],[1,0,1],[1,1,1]]",
+            "output": "[[1,0,1],[0,0,0],[1,0,1]]",
+            "isHidden": false
+        },
+        {
+            "input": "[[0,1,2,0],[3,4,5,2],[1,3,1,5]]",
+            "output": "[[0,0,0,0],[0,4,5,0],[0,3,1,0]]",
+            "isHidden": false
+        },
+        {
+            "input": "[[1,0]]",
+            "output": "[[0,0]]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Search a 2D Matrix",
+    "difficulty": "medium",
+    "description": "Write an efficient algorithm to search for a value target in an m x n matrix where each row is sorted and first element of row is greater than last element of previous row.",
+    "examples": [{
+        "input": "matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3",
+        "output": "true",
+        "explanation": "3 exists in the matrix"
+    }],
+    "starterCode": {
+        "python": "def searchMatrix(matrix: List[List[int]], target: int) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function searchMatrix(matrix, target) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean searchMatrix(int[][] matrix, int target) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool searchMatrix(vector<vector<int>>& matrix, int target) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 3",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "matrix = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], target = 13",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "matrix = [[1]], target = 1",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Subsets",
+    "difficulty": "medium",
+    "description": "Given an integer array nums of unique elements, return all possible subsets (the power set). The solution set must not contain duplicate subsets.",
+    "examples": [{
+        "input": "nums = [1,2,3]",
+        "output": "[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]",
+        "explanation": "All possible subsets including empty set and full set"
+    }],
+    "starterCode": {
+        "python": "def subsets(nums: List[int]) -> List[List[int]]:\n    # Write your code here\n    pass",
+        "javascript": "function subsets(nums) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<List<Integer>> subsets(int[] nums) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<int>> subsets(vector<int>& nums) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,2,3]",
+            "output": "[[],[1],[2],[1,2],[3],[1,3],[2,3],[1,2,3]]",
+            "isHidden": false
+        },
+        {
+            "input": "[0]",
+            "output": "[[],[0]]",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2]",
+            "output": "[[],[1],[2],[1,2]]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Word Search",
+    "difficulty": "medium",
+    "description": "Given an m x n grid of characters board and a string word, return true if word exists in the grid. The word can be constructed from adjacent cells (horizontally or vertically).",
+    "examples": [{
+        "input": "board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = 'ABCCED'",
+        "output": "true",
+        "explanation": "ABCCED can be found by connecting adjacent letters"
+    }],
+    "starterCode": {
+        "python": "def exist(board: List[List[str]], word: str) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function exist(board, word) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean exist(char[][] board, String word) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool exist(vector<vector<char>>& board, string word) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = 'ABCCED'",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = 'SEE'",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "board = [['A','B','C','E'],['S','F','C','S'],['A','D','E','E']], word = 'ABCB'",
+            "output": "false",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Subsets II",
+    "difficulty": "medium",
+    "description": "Given an integer array nums that may contain duplicates, return all possible subsets (the power set). The solution set must not contain duplicate subsets.",
+    "examples": [{
+        "input": "nums = [1,2,2]",
+        "output": "[[],[1],[1,2],[1,2,2],[2],[2,2]]",
+        "explanation": "All possible subsets avoiding duplicates"
+    }],
+    "starterCode": {
+        "python": "def subsetsWithDup(nums: List[int]) -> List[List[int]]:\n    # Write your code here\n    pass",
+        "javascript": "function subsetsWithDup(nums) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<List<Integer>> subsetsWithDup(int[] nums) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<int>> subsetsWithDup(vector<int>& nums) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,2,2]",
+            "output": "[[],[1],[1,2],[1,2,2],[2],[2,2]]",
+            "isHidden": false
+        },
+        {
+            "input": "[0]",
+            "output": "[[],[0]]",
+            "isHidden": false
+        },
+        {
+            "input": "[4,4,4,1,4]",
+            "output": "[[],[1],[1,4],[1,4,4],[1,4,4,4],[1,4,4,4,4],[4],[4,4],[4,4,4],[4,4,4,4]]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Decode Ways",
+    "difficulty": "medium",
+    "description": "A message containing letters from A-Z can be encoded into numbers. Given a string s containing only digits, return the number of ways to decode it.",
+    "examples": [{
+        "input": "s = '12'",
+        "output": "2",
+        "explanation": "Could be decoded as 'AB' (1 2) or 'L' (12)"
+    }],
+    "starterCode": {
+        "python": "def numDecodings(s: str) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function numDecodings(s) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int numDecodings(String s) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int numDecodings(string s) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "'12'",
+            "output": "2",
+            "isHidden": false
+        },
+        {
+            "input": "'226'",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "'06'",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Validate Binary Search Tree",
+    "difficulty": "medium",
+    "description": "Given the root of a binary tree, determine if it is a valid binary search tree (BST). A valid BST has all left subtree values less than node's value and all right subtree values greater than node's value.",
+    "examples": [{
+        "input": "root = [2,1,3]",
+        "output": "true",
+        "explanation": "Left child (1) < Root (2) < Right child (3)"
+    }],
+    "starterCode": {
+        "python": "def isValidBST(root: TreeNode) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function isValidBST(root) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean isValidBST(TreeNode root) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool isValidBST(TreeNode* root) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[2,1,3]",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "[5,1,4,null,null,3,6]",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "[1,1]",
+            "output": "false",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Binary Tree Level Order Traversal",
+    "difficulty": "medium",
+    "description": "Given the root of a binary tree, return the level order traversal of its nodes' values (i.e., from left to right, level by level).",
+    "examples": [{
+        "input": "root = [3,9,20,null,null,15,7]",
+        "output": "[[3],[9,20],[15,7]]",
+        "explanation": "Level by level traversal from top to bottom"
+    }],
+    "starterCode": {
+        "python": "def levelOrder(root: TreeNode) -> List[List[int]]:\n    # Write your code here\n    pass",
+        "javascript": "function levelOrder(root) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<List<Integer>> levelOrder(TreeNode root) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<int>> levelOrder(TreeNode* root) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[3,9,20,null,null,15,7]",
+            "output": "[[3],[9,20],[15,7]]",
+            "isHidden": false
+        },
+        {
+            "input": "[1]",
+            "output": "[[1]]",
+            "isHidden": false
+        },
+        {
+            "input": "[]",
+            "output": "[]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Construct Binary Tree from Preorder and Inorder Traversal",
+    "difficulty": "medium",
+    "description": "Given two integer arrays preorder and inorder where preorder is the preorder traversal and inorder is the inorder traversal of the same binary tree, construct and return the binary tree.",
+    "examples": [{
+        "input": "preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]",
+        "output": "[3,9,20,null,null,15,7]",
+        "explanation": "Reconstructed tree matches given traversals"
+    }],
+    "starterCode": {
+        "python": "def buildTree(preorder: List[int], inorder: List[int]) -> TreeNode:\n    # Write your code here\n    pass",
+        "javascript": "function buildTree(preorder, inorder) {\n    // Write your code here\n    return null;\n}",
+        "java": "class Solution {\n    public TreeNode buildTree(int[] preorder, int[] inorder) {\n        // Write your code here\n        return null;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder) {\n        // Write your code here\n        return nullptr;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "preorder = [3,9,20,15,7], inorder = [9,3,15,20,7]",
+            "output": "[3,9,20,null,null,15,7]",
+            "isHidden": false
+        },
+        {
+            "input": "preorder = [-1], inorder = [-1]",
+            "output": "[-1]",
+            "isHidden": false
+        },
+        {
+            "input": "preorder = [1,2], inorder = [2,1]",
+            "output": "[1,2]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Binary Tree Right Side View",
+    "difficulty": "medium",
+    "description": "Given a binary tree, imagine yourself standing on its right side. Return the values of nodes you can see ordered from top to bottom.",
+    "examples": [{
+        "input": "root = [1,2,3,null,5,null,4]",
+        "output": "[1,3,4]",
+        "explanation": "Looking from right side, you can see nodes 1, 3, and 4"
+    }],
+    "starterCode": {
+        "python": "def rightSideView(root: TreeNode) -> List[int]:\n    # Write your code here\n    pass",
+        "javascript": "function rightSideView(root) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<Integer> rightSideView(TreeNode root) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<int> rightSideView(TreeNode* root) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,2,3,null,5,null,4]",
+            "output": "[1,3,4]",
+            "isHidden": false
+        },
+        {
+            "input": "[1,null,3]",
+            "output": "[1,3]",
+            "isHidden": false
+        },
+        {
+            "input": "[]",
+            "output": "[]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Course Schedule",
+    "difficulty": "medium",
+    "description": "Given numCourses and prerequisites array where prerequisites[i] = [ai, bi] indicates you must take bi before ai, return true if you can finish all courses.",
+    "examples": [{
+        "input": "numCourses = 2, prerequisites = [[1,0]]",
+        "output": "true",
+        "explanation": "You can take course 0 first, then course 1"
+    }],
+    "starterCode": {
+        "python": "def canFinish(numCourses: int, prerequisites: List[List[int]]) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function canFinish(numCourses, prerequisites) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean canFinish(int numCourses, int[][] prerequisites) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "numCourses = 2, prerequisites = [[1,0]]",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "numCourses = 2, prerequisites = [[1,0],[0,1]]",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "numCourses = 5, prerequisites = [[1,4],[2,4],[3,1],[3,2]]",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Implement Trie (Prefix Tree)",
+    "difficulty": "medium",
+    "description": "Implement a trie (prefix tree) with insert, search, and startsWith methods. A trie stores strings, with each node representing a character.",
+    "examples": [{
+        "input": "Trie trie = new Trie();\ntrie.insert('apple');\ntrie.search('apple')",
+        "output": "true",
+        "explanation": "After inserting 'apple', searching for it returns true"
+    }],
+    "starterCode": {
+        "python": "class Trie:\n    def __init__(self):\n        # Initialize your data structure here\n        pass\n    \n    def insert(self, word: str) -> None:\n        # Insert a word into the trie\n        pass\n    \n    def search(self, word: str) -> bool:\n        # Return true if word exists in trie\n        pass\n    \n    def startsWith(self, prefix: str) -> bool:\n        # Return true if there is a word that starts with prefix\n        pass",
+        "javascript": "class Trie {\n    constructor() {\n        // Initialize your data structure here\n    }\n    \n    insert(word) {\n        // Insert a word into the trie\n    }\n    \n    search(word) {\n        // Return true if word exists in trie\n        return false;\n    }\n    \n    startsWith(prefix) {\n        // Return true if there is a word that starts with prefix\n        return false;\n    }\n}",
+        "java": "class Trie {\n    public Trie() {\n        // Initialize your data structure here\n    }\n    \n    public void insert(String word) {\n        // Insert a word into the trie\n    }\n    \n    public boolean search(String word) {\n        // Return true if word exists in trie\n        return false;\n    }\n    \n    public boolean startsWith(String prefix) {\n        // Return true if there is a word that starts with prefix\n        return false;\n    }\n}",
+        "cpp": "class Trie {\npublic:\n    Trie() {\n        // Initialize your data structure here\n    }\n    \n    void insert(string word) {\n        // Insert a word into the trie\n    }\n    \n    bool search(string word) {\n        // Return true if word exists in trie\n        return false;\n    }\n    \n    bool startsWith(string prefix) {\n        // Return true if there is a word that starts with prefix\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "trie.insert('apple'); trie.search('apple');",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "trie.insert('apple'); trie.search('app');",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "trie.insert('apple'); trie.startsWith('app');",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Course Schedule II",
+    "difficulty": "medium",
+    "description": "Given numCourses and prerequisites array, return ordering of courses to take. Return empty array if impossible to finish all courses.",
+    "examples": [{
+        "input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
+        "output": "[0,1,2,3]",
+        "explanation": "One valid course ordering (not the only one)"
+    }],
+    "starterCode": {
+        "python": "def findOrder(numCourses: int, prerequisites: List[List[int]]) -> List[int]:\n    # Write your code here\n    pass",
+        "javascript": "function findOrder(numCourses, prerequisites) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public int[] findOrder(int numCourses, int[][] prerequisites) {\n        // Write your code here\n        return new int[]{};\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<int> findOrder(int numCourses, vector<vector<int>>& prerequisites) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "numCourses = 2, prerequisites = [[1,0]]",
+            "output": "[0,1]",
+            "isHidden": false
+        },
+        {
+            "input": "numCourses = 4, prerequisites = [[1,0],[2,0],[3,1],[3,2]]",
+            "output": "[0,1,2,3]",
+            "isHidden": false
+        },
+        {
+            "input": "numCourses = 1, prerequisites = []",
+            "output": "[0]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Design Add and Search Words Data Structure",
+    "difficulty": "medium",
+    "description": "Design a data structure that supports adding words and searching for words, where search supports regular letters and '.' that matches any letter.",
+    "examples": [{
+        "input": "wordDictionary.addWord('bad'); wordDictionary.search('b..');",
+        "output": "true",
+        "explanation": "'bad' matches the pattern 'b..'"
+    }],
+    "starterCode": {
+        "python": "class WordDictionary:\n    def __init__(self):\n        # Initialize your data structure here\n        pass\n    \n    def addWord(self, word: str) -> None:\n        # Add a word into the data structure\n        pass\n    \n    def search(self, word: str) -> bool:\n        # Returns true if word is in the data structure\n        pass",
+        "javascript": "class WordDictionary {\n    constructor() {\n        // Initialize your data structure here\n    }\n    \n    addWord(word) {\n        // Add a word into the data structure\n    }\n    \n    search(word) {\n        // Returns true if word is in the data structure\n        return false;\n    }\n}",
+        "java": "class WordDictionary {\n    public WordDictionary() {\n        // Initialize your data structure here\n    }\n    \n    public void addWord(String word) {\n        // Add a word into the data structure\n    }\n    \n    public boolean search(String word) {\n        // Returns true if word is in the data structure\n        return false;\n    }\n}",
+        "cpp": "class WordDictionary {\npublic:\n    WordDictionary() {\n        // Initialize your data structure here\n    }\n    \n    void addWord(string word) {\n        // Add a word into the data structure\n    }\n    \n    bool search(string word) {\n        // Returns true if word is in the data structure\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "wordDictionary.addWord('bad'); wordDictionary.search('b..');",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "wordDictionary.addWord('dad'); wordDictionary.search('d.d');",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "wordDictionary.addWord('mad'); wordDictionary.search('.');",
+            "output": "false",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "House Robber II",
+    "difficulty": "medium",
+    "description": "Rob houses arranged in a circle without robbing adjacent ones. Each house has money, return maximum possible loot without alerting police (triggered by adjacent robberies).",
+    "examples": [{
+        "input": "nums = [2,3,2]",
+        "output": "3",
+        "explanation": "Cannot rob first and last house (they're adjacent in circle). Best is to rob house at position 1."
+    }],
+    "starterCode": {
+        "python": "def rob(nums: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function rob(nums) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int rob(int[] nums) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int rob(vector<int>& nums) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[2,3,2]",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2,3,1]",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2,3]",
+            "output": "3",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Kth Largest Element in an Array",
+    "difficulty": "medium",
+    "description": "Given an integer array nums and an integer k, return the kth largest element in the array. Note that it is the kth largest element in the sorted order.",
+    "examples": [{
+        "input": "nums = [3,2,1,5,6,4], k = 2",
+        "output": "5",
+        "explanation": "After sorting [6,5,4,3,2,1], the 2nd largest element is 5"
+    }],
+    "starterCode": {
+        "python": "def findKthLargest(nums: List[int], k: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function findKthLargest(nums, k) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int findKthLargest(int[] nums, int k) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int findKthLargest(vector<int>& nums, int k) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "nums = [3,2,1,5,6,4], k = 2",
+            "output": "5",
+            "isHidden": false
+        },
+        {
+            "input": "nums = [3,2,3,1,2,4,5,5,6], k = 4",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "nums = [1], k = 1",
+            "output": "1",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Kth Smallest Element in a BST",
+    "difficulty": "medium",
+    "description": "Given the root of a binary search tree and integer k, return the kth smallest value in the BST (1-indexed).",
+    "examples": [{
+        "input": "root = [3,1,4,null,2], k = 1",
+        "output": "1",
+        "explanation": "The smallest element in the BST is 1"
+    }],
+    "starterCode": {
+        "python": "def kthSmallest(root: TreeNode, k: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function kthSmallest(root, k) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int kthSmallest(TreeNode root, int k) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int kthSmallest(TreeNode* root, int k) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "root = [3,1,4,null,2], k = 1",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "root = [5,3,6,2,4,null,null,1], k = 3",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "root = [1], k = 1",
+            "output": "1",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Product of Array Except Self",
+    "difficulty": "medium",
+    "description": "Given an integer array nums, return an array answer where answer[i] is equal to the product of all elements of nums except nums[i].",
+    "examples": [{
+        "input": "nums = [1,2,3,4]",
+        "output": "[24,12,8,6]",
+        "explanation": "answer[0] = 2*3*4, answer[1] = 1*3*4, etc."
+    }],
+    "starterCode": {
+        "python": "def productExceptSelf(nums: List[int]) -> List[int]:\n    # Write your code here\n    pass",
+        "javascript": "function productExceptSelf(nums) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public int[] productExceptSelf(int[] nums) {\n        // Write your code here\n        return new int[]{};\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<int> productExceptSelf(vector<int>& nums) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,2,3,4]",
+            "output": "[24,12,8,6]",
+            "isHidden": false
+        },
+        {
+            "input": "[-1,1,0,-3,3]",
+            "output": "[0,0,9,0,0]",
+            "isHidden": false
+        },
+        {
+            "input": "[0,0]",
+            "output": "[0,0]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Find the Duplicate Number",
+    "difficulty": "medium",
+    "description": "Given an array nums containing n + 1 integers where each integer is in the range [1, n], return the duplicate number. There is only one repeated number.",
+    "examples": [{
+        "input": "nums = [1,3,4,2,2]",
+        "output": "2",
+        "explanation": "2 appears twice in the array"
+    }],
+    "starterCode": {
+        "python": "def findDuplicate(nums: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function findDuplicate(nums) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int findDuplicate(int[] nums) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int findDuplicate(vector<int>& nums) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,3,4,2,2]",
+            "output": "2",
+            "isHidden": false
+        },
+        {
+            "input": "[3,1,3,4,2]",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "[2,2,2,2,2]",
+            "output": "2",
+            "isHidden": true
+        }
+    ]
+},{
+    "title": "Longest Increasing Subsequence",
+    "difficulty": "medium",
+    "description": "Given an integer array nums, return the length of the longest strictly increasing subsequence. A subsequence is a sequence that can be derived from an array by deleting some or no elements without changing the order.",
+    "examples": [{
+        "input": "nums = [10,9,2,5,3,7,101,18]",
+        "output": "4",
+        "explanation": "The longest increasing subsequence is [2,3,7,101], length is 4"
+    }],
+    "starterCode": {
+        "python": "def lengthOfLIS(nums: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function lengthOfLIS(nums) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int lengthOfLIS(int[] nums) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int lengthOfLIS(vector<int>& nums) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[10,9,2,5,3,7,101,18]",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "[0,1,0,3,2,3]",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "[7,7,7,7,7,7,7]",
+            "output": "1",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Best Time to Buy and Sell Stock with Cooldown",
+    "difficulty": "medium",
+    "description": "You are given an array prices where prices[i] is the price of a given stock on the ith day. After selling, you must wait one day before buying again (cooldown). Return the maximum profit you can achieve.",
+    "examples": [{
+        "input": "prices = [1,2,3,0,2]",
+        "output": "3",
+        "explanation": "Buy on day 1 (price = 1) and sell on day 2 (price = 2), profit = 1. Then buy on day 4 (price = 0) and sell on day 5 (price = 2), profit = 2. Total profit is 3."
+    }],
+    "starterCode": {
+        "python": "def maxProfit(prices: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function maxProfit(prices) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int maxProfit(int[] prices) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int maxProfit(vector<int>& prices) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,2,3,0,2]",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "[1]",
+            "output": "0",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2,4,0,2]",
+            "output": "3",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Coin Change",
+    "difficulty": "medium",
+    "description": "Given an array of coins representing different denominations and an amount, return the fewest number of coins needed to make up that amount. Return -1 if the amount cannot be made up by any combination of coins.",
+    "examples": [{
+        "input": "coins = [1,2,5], amount = 11",
+        "output": "3",
+        "explanation": "11 = 5 + 5 + 1"
+    }],
+    "starterCode": {
+        "python": "def coinChange(coins: List[int], amount: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function coinChange(coins, amount) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int coinChange(int[] coins, int amount) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int coinChange(vector<int>& coins, int amount) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "coins = [1,2,5], amount = 11",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "coins = [2], amount = 3",
+            "output": "-1",
+            "isHidden": false
+        },
+        {
+            "input": "coins = [1], amount = 0",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Top K Frequent Elements",
+    "difficulty": "medium",
+    "description": "Given an integer array nums and an integer k, return the k most frequent elements. You may return the answer in any order.",
+    "examples": [{
+        "input": "nums = [1,1,1,2,2,3], k = 2",
+        "output": "[1,2]",
+        "explanation": "1 appears three times, 2 appears twice, and 3 appears once. So the two most frequent elements are 1 and 2."
+    }],
+    "starterCode": {
+        "python": "def topKFrequent(nums: List[int], k: int) -> List[int]:\n    # Write your code here\n    pass",
+        "javascript": "function topKFrequent(nums, k) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public int[] topKFrequent(int[] nums, int k) {\n        // Write your code here\n        return new int[]{};\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<int> topKFrequent(vector<int>& nums, int k) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "nums = [1,1,1,2,2,3], k = 2",
+            "output": "[1,2]",
+            "isHidden": false
+        },
+        {
+            "input": "nums = [1], k = 1",
+            "output": "[1]",
+            "isHidden": false
+        },
+        {
+            "input": "nums = [1,2,2,3,3,3], k = 2",
+            "output": "[3,2]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Design Twitter",
+    "difficulty": "medium",
+    "description": "Design a simplified version of Twitter where users can post tweets, follow/unfollow users, and see the 10 most recent tweets in their news feed.",
+    "examples": [{
+        "input": "twitter.postTweet(1, 5);\ntwitter.getNewsFeed(1);\ntwitter.follow(1, 2);\ntwitter.postTweet(2, 6);\ntwitter.getNewsFeed(1);",
+        "output": "[5]\n[6,5]",
+        "explanation": "User 1 posts a tweet(5), follows user 2, user 2 posts tweet(6), feed shows both tweets"
+    }],
+    "starterCode": {
+        "python": "class Twitter:\n    def __init__(self):\n        # Initialize your data structure here\n        pass\n    \n    def postTweet(self, userId: int, tweetId: int) -> None:\n        # Post a tweet\n        pass\n    \n    def getNewsFeed(self, userId: int) -> List[int]:\n        # Retrieve 10 most recent tweets\n        pass\n    \n    def follow(self, followerId: int, followeeId: int) -> None:\n        # Follower follows followee\n        pass\n    \n    def unfollow(self, followerId: int, followeeId: int) -> None:\n        # Follower unfollows followee\n        pass",
+        "javascript": "class Twitter {\n    constructor() {\n        // Initialize your data structure here\n    }\n    \n    postTweet(userId, tweetId) {\n        // Post a tweet\n    }\n    \n    getNewsFeed(userId) {\n        // Retrieve 10 most recent tweets\n        return [];\n    }\n    \n    follow(followerId, followeeId) {\n        // Follower follows followee\n    }\n    \n    unfollow(followerId, followeeId) {\n        // Follower unfollows followee\n    }\n}",
+        "java": "class Twitter {\n    public Twitter() {\n        // Initialize your data structure here\n    }\n    \n    public void postTweet(int userId, int tweetId) {\n        // Post a tweet\n    }\n    \n    public List<Integer> getNewsFeed(int userId) {\n        // Retrieve 10 most recent tweets\n        return new ArrayList<>();\n    }\n    \n    public void follow(int followerId, int followeeId) {\n        // Follower follows followee\n    }\n    \n    public void unfollow(int followerId, int followeeId) {\n        // Follower unfollows followee\n    }\n}",
+        "cpp": "class Twitter {\npublic:\n    Twitter() {\n        // Initialize your data structure here\n    }\n    \n    void postTweet(int userId, int tweetId) {\n        // Post a tweet\n    }\n    \n    vector<int> getNewsFeed(int userId) {\n        // Retrieve 10 most recent tweets\n        return {};\n    }\n    \n    void follow(int followerId, int followeeId) {\n        // Follower follows followee\n    }\n    \n    void unfollow(int followerId, int followeeId) {\n        // Follower unfollows followee\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "twitter.postTweet(1, 5); twitter.getNewsFeed(1); twitter.follow(1, 2); twitter.postTweet(2, 6); twitter.getNewsFeed(1);",
+            "output": "[5]\n[6,5]",
+            "isHidden": false
+        },
+        {
+            "input": "twitter.postTweet(1, 1); twitter.unfollow(1, 2); twitter.getNewsFeed(1);",
+            "output": "[1]",
+            "isHidden": false
+        },
+        {
+            "input": "twitter.follow(1,1); twitter.postTweet(1,5); twitter.getNewsFeed(1);",
+            "output": "[5]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Sum of Two Integers",
+    "difficulty": "medium",
+    "description": "Given two integers a and b, return the sum of the two integers without using the operators + and -. You must use bit manipulation.",
+    "examples": [{
+        "input": "a = 1, b = 2",
+        "output": "3",
+        "explanation": "1 + 2 = 3, but you must use bit manipulation"
+    }],
+    "starterCode": {
+        "python": "def getSum(a: int, b: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function getSum(a, b) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int getSum(int a, int b) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int getSum(int a, int b) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "a = 1, b = 2",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "a = 2, b = 3",
+            "output": "5",
+            "isHidden": false
+        },
+        {
+            "input": "a = -1, b = 1",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Partition Equal Subset Sum",
+    "difficulty": "medium",
+    "description": "Given a non-empty array nums containing only positive integers, find if the array can be partitioned into two subsets such that the sum of elements in both subsets is equal.",
+    "examples": [{
+        "input": "nums = [1,5,11,5]",
+        "output": "true",
+        "explanation": "The array can be partitioned as [1, 5, 5] and [11]"
+    }],
+    "starterCode": {
+        "python": "def canPartition(nums: List[int]) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function canPartition(nums) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean canPartition(int[] nums) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool canPartition(vector<int>& nums) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,5,11,5]",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2,3,5]",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2,3,4,5,6,7]",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Pacific Atlantic Water Flow",
+    "difficulty": "medium",
+    "description": "Given an m x n matrix of non-negative integers representing the height of each unit cell in a continent, the Pacific ocean touches the left and top edges and the Atlantic ocean touches the right and bottom edges. Water can only flow from a cell to another one with height equal or lower. Find all points where water can flow to both oceans.",
+    "examples": [{
+        "input": "heights = [[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]",
+        "output": "[[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]",
+        "explanation": "The points where water can flow to both oceans are listed in ascending order by row then column"
+    }],
+    "starterCode": {
+        "python": "def pacificAtlantic(heights: List[List[int]]) -> List[List[int]]:\n    # Write your code here\n    pass",
+        "javascript": "function pacificAtlantic(heights) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<List<Integer>> pacificAtlantic(int[][] heights) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<int>> pacificAtlantic(vector<vector<int>>& heights) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[1,2,2,3,5],[3,2,3,4,4],[2,4,5,3,1],[6,7,1,4,5],[5,1,1,2,4]]",
+            "output": "[[0,4],[1,3],[1,4],[2,2],[3,0],[3,1],[4,0]]",
+            "isHidden": false
+        },
+        {
+            "input": "[[2,1],[1,2]]",
+            "output": "[[0,0],[0,1],[1,0],[1,1]]",
+            "isHidden": false
+        },
+        {
+            "input": "[[1]]",
+            "output": "[[0,0]]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Longest Repeating Character Replacement",
+    "difficulty": "medium",
+    "description": "Given a string s and an integer k, you can choose any character and replace it with any other uppercase English character at most k times. Return the length of the longest substring containing the same letter after performing the operations.",
+    "examples": [{
+        "input": "s = 'ABAB', k = 2",
+        "output": "4",
+        "explanation": "Replace the two 'A's with two 'B's or vice versa to get 'BBBB'"
+    }],
+    "starterCode": {
+        "python": "def characterReplacement(s: str, k: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function characterReplacement(s, k) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int characterReplacement(String s, int k) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int characterReplacement(string s, int k) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "s = 'ABAB', k = 2",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "s = 'AABABBA', k = 1",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "s = 'AAAA', k = 2",
+            "output": "4",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Non-overlapping Intervals",
+    "difficulty": "medium",
+    "description": "Given an array of intervals where intervals[i] = [starti, endi], return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.",
+    "examples": [{
+        "input": "intervals = [[1,2],[2,3],[3,4],[1,3]]",
+        "output": "1",
+        "explanation": "Remove [1,3] and the rest of the intervals are non-overlapping"
+    }],
+    "starterCode": {
+        "python": "def eraseOverlapIntervals(intervals: List[List[int]]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function eraseOverlapIntervals(intervals) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int eraseOverlapIntervals(int[][] intervals) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int eraseOverlapIntervals(vector<vector<int>>& intervals) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[1,2],[2,3],[3,4],[1,3]]",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "[[1,2],[1,2],[1,2]]",
+            "output": "2",
+            "isHidden": false
+        },
+        {
+            "input": "[[1,100],[11,22],[1,11],[2,12]]",
+            "output": "2",
+            "isHidden": true
+        }
+    ]
+}, {
+    "title": "Lowest Common Ancestor of a Binary Search Tree",
+    "difficulty": "medium",
+    "description": "Given a binary search tree (BST), find the lowest common ancestor (LCA) node of two given nodes p and q in the BST. The LCA is the deepest node that has both p and q as descendants (a node can be a descendant of itself).",
+    "examples": [{
+        "input": "root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8",
+        "output": "6",
+        "explanation": "The LCA of nodes 2 and 8 is 6"
+    }],
+    "starterCode": {
+        "python": "def lowestCommonAncestor(root: TreeNode, p: TreeNode, q: TreeNode) -> TreeNode:\n    # Write your code here\n    pass",
+        "javascript": "function lowestCommonAncestor(root, p, q) {\n    // Write your code here\n    return null;\n}",
+        "java": "class Solution {\n    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {\n        // Write your code here\n        return null;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q) {\n        // Write your code here\n        return nullptr;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 8",
+            "output": "6",
+            "isHidden": false
+        },
+        {
+            "input": "root = [6,2,8,0,4,7,9,null,null,3,5], p = 2, q = 4",
+            "output": "2",
+            "isHidden": false
+        },
+        {
+            "input": "root = [2,1], p = 2, q = 1",
+            "output": "2",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Target Sum",
+    "difficulty": "medium",
+    "description": "You are given an integer array nums and an integer target. Build an expression out of nums by adding one of the symbols '+' and '-' before each integer in nums and then concatenate all the integers. Return the number of different expressions that you can build, which evaluates to target.",
+    "examples": [{
+        "input": "nums = [1,1,1,1,1], target = 3",
+        "output": "5",
+        "explanation": "The expressions that evaluate to 3 are: -1+1+1+1+1, +1-1+1+1+1, +1+1-1+1+1, +1+1+1-1+1, +1+1+1+1-1"
+    }],
+    "starterCode": {
+        "python": "def findTargetSumWays(nums: List[int], target: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function findTargetSumWays(nums, target) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int findTargetSumWays(int[] nums, int target) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int findTargetSumWays(vector<int>& nums, int target) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "nums = [1,1,1,1,1], target = 3",
+            "output": "5",
+            "isHidden": false
+        },
+        {
+            "input": "nums = [1], target = 1",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "nums = [1,0], target = 1",
+            "output": "2",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Permutation in String",
+    "difficulty": "medium",
+    "description": "Given two strings s1 and s2, return true if s2 contains a permutation of s1, or false otherwise. In other words, return true if one of s1's permutations is the substring of s2.",
+    "examples": [{
+        "input": "s1 = 'ab', s2 = 'eidbaooo'",
+        "output": "true",
+        "explanation": "'ba' is a permutation of 'ab' and is a substring of s2"
+    }],
+    "starterCode": {
+        "python": "def checkInclusion(s1: str, s2: str) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function checkInclusion(s1, s2) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean checkInclusion(String s1, String s2) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool checkInclusion(string s1, string s2) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "s1 = 'ab', s2 = 'eidbaooo'",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "s1 = 'ab', s2 = 'eidboaoo'",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "s1 = 'adc', s2 = 'dcda'",
+            "output": "true",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Task Scheduler",
+    "difficulty": "medium",
+    "description": "Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task takes one unit of time. For each unit of time, the CPU could complete either one task or just be idle. However, there must be at least n units of time between any two same tasks. Return the least number of units of time that the CPU will take to finish all the given tasks.",
+    "examples": [{
+        "input": "tasks = ['A','A','A','B','B','B'], n = 2",
+        "output": "8",
+        "explanation": "A -> B -> idle -> A -> B -> idle -> A -> B"
+    }],
+    "starterCode": {
+        "python": "def leastInterval(tasks: List[str], n: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function leastInterval(tasks, n) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int leastInterval(char[] tasks, int n) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int leastInterval(vector<char>& tasks, int n) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "tasks = ['A','A','A','B','B','B'], n = 2",
+            "output": "8",
+            "isHidden": false
+        },
+        {
+            "input": "tasks = ['A','A','A','B','B','B'], n = 0",
+            "output": "6",
+            "isHidden": false
+        },
+        {
+            "input": "tasks = ['A','A','A','A','A','A','B','C','D','E','F','G'], n = 2",
+            "output": "16",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Palindromic Substrings",
+    "difficulty": "medium",
+    "description": "Given a string s, return the number of palindromic substrings in it. A string is a palindrome when it reads the same backward as forward. A substring is a contiguous sequence of characters within the string.",
+    "examples": [{
+        "input": "s = 'abc'",
+        "output": "3",
+        "explanation": "Three palindromic strings: 'a', 'b', 'c'"
+    }],
+    "starterCode": {
+        "python": "def countSubstrings(s: str) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function countSubstrings(s) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int countSubstrings(String s) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int countSubstrings(string s) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "'abc'",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "'aaa'",
+            "output": "6",
+            "isHidden": false
+        },
+        {
+            "input": "'racecar'",
+            "output": "10",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Redundant Connection",
+    "difficulty": "medium",
+    "description": "In a graph with n nodes labeled from 1 to n, edges represents a list of undirected edges. Return an edge that can be removed so that the graph becomes a tree of n nodes. If there are multiple answers, return the last edge that occurs in the input.",
+    "examples": [{
+        "input": "edges = [[1,2],[1,3],[2,3]]",
+        "output": "[2,3]",
+        "explanation": "Removing edge [2,3] results in a valid tree. Removing [1,2] or [1,3] also works, but [2,3] is the last edge in input."
+    }],
+    "starterCode": {
+        "python": "def findRedundantConnection(edges: List[List[int]]) -> List[int]:\n    # Write your code here\n    pass",
+        "javascript": "function findRedundantConnection(edges) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public int[] findRedundantConnection(int[][] edges) {\n        // Write your code here\n        return new int[]{};\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<int> findRedundantConnection(vector<vector<int>>& edges) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[1,2],[1,3],[2,3]]",
+            "output": "[2,3]",
+            "isHidden": false
+        },
+        {
+            "input": "[[1,2],[2,3],[3,4],[1,4],[1,5]]",
+            "output": "[1,4]",
+            "isHidden": false
+        },
+        {
+            "input": "[[1,2],[2,3],[3,4],[4,1],[1,5]]",
+            "output": "[4,1]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Max Area of Island",
+    "difficulty": "medium",
+    "description": "You are given an m x n binary matrix grid. An island is a group of 1's (representing land) connected 4-directionally (horizontal or vertical). Return the maximum area of an island in grid. If there is no island, return 0.",
+    "examples": [{
+        "input": "grid = [[0,0,1,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,1,1,0,1,0,0,0,0,0,0,0,0],[0,1,0,0,1,1,0,0,1,0,1,0,0],[0,1,0,0,1,1,0,0,1,1,1,0,0],[0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,1,1,0,0,0,0]]",
+        "output": "6",
+        "explanation": "The answer is the island with area = 6, as shown in the grid"
+    }],
+    "starterCode": {
+        "python": "def maxAreaOfIsland(grid: List[List[int]]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function maxAreaOfIsland(grid) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int maxAreaOfIsland(int[][] grid) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int maxAreaOfIsland(vector<vector<int>>& grid) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[0,0,1,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,1,1,0,1,0,0,0,0,0,0,0,0],[0,1,0,0,1,1,0,0,1,0,1,0,0],[0,1,0,0,1,1,0,0,1,1,1,0,0],[0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,1,1,0,0,0,0]]",
+            "output": "6",
+            "isHidden": false
+        },
+        {
+            "input": "[[0,0,0,0,0,0,0,0]]",
+            "output": "0",
+            "isHidden": false
+        },
+        {
+            "input": "[[1,1,0,0,0],[1,1,0,0,0],[0,0,0,1,1],[0,0,0,1,1]]",
+            "output": "4",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Daily Temperatures",
+    "difficulty": "medium",
+    "description": "Given an array of integers temperatures representing daily temperatures, return an array answer such that answer[i] is the number of days you have to wait after the ith day to get a warmer temperature. If there is no future day for which this is possible, keep answer[i] == 0.",
+    "examples": [{
+        "input": "temperatures = [73,74,75,71,69,72,76,73]",
+        "output": "[1,1,4,2,1,1,0,0]",
+        "explanation": "For temperatures[0]=73, next warmer is temperatures[1]=74 (wait 1 day). Similarly for others."
+    }],
+    "starterCode": {
+        "python": "def dailyTemperatures(temperatures: List[int]) -> List[int]:\n    # Write your code here\n    pass",
+        "javascript": "function dailyTemperatures(temperatures) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public int[] dailyTemperatures(int[] temperatures) {\n        // Write your code here\n        return new int[]{};\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<int> dailyTemperatures(vector<int>& temperatures) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[73,74,75,71,69,72,76,73]",
+            "output": "[1,1,4,2,1,1,0,0]",
+            "isHidden": false
+        },
+        {
+            "input": "[30,40,50,60]",
+            "output": "[1,1,1,0]",
+            "isHidden": false
+        },
+        {
+            "input": "[30,60,90]",
+            "output": "[1,1,0]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Network Delay Time",
+    "difficulty": "medium",
+    "description": "You are given a network of n nodes, labeled from 1 to n. You are also given times, a list of travel times as directed edges times[i] = (ui, vi, wi), where ui is the source node, vi is the target node, and wi is the time it takes for a signal to travel from source to target. We will send a signal from a given node k. Return the minimum time it takes for all the n nodes to receive the signal. If it is impossible for all the n nodes to receive the signal, return -1.",
+    "examples": [{
+        "input": "times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2",
+        "output": "2",
+        "explanation": "Signal starts at node 2, reaches node 1 and 3 at time 1, then reaches node 4 at time 2"
+    }],
+    "starterCode": {
+        "python": "def networkDelayTime(times: List[List[int]], n: int, k: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function networkDelayTime(times, n, k) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int networkDelayTime(int[][] times, int n, int k) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int networkDelayTime(vector<vector<int>>& times, int n, int k) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "times = [[2,1,1],[2,3,1],[3,4,1]], n = 4, k = 2",
+            "output": "2",
+            "isHidden": false
+        },
+        {
+            "input": "times = [[1,2,1]], n = 2, k = 1",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "times = [[1,2,1]], n = 2, k = 2",
+            "output": "-1",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Cheapest Flights Within K Stops",
+    "difficulty": "medium",
+    "description": "There are n cities connected by some number of flights. You are given an array flights where flights[i] = [fromi, toi, pricei] indicates that there is a flight from city fromi to city toi with cost pricei. You are also given three integers src, dst, and k, return the cheapest price from src to dst with at most k stops. If there is no such route, return -1.",
+    "examples": [{
+        "input": "n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 1",
+        "output": "200",
+        "explanation": "The optimal path is 0 -> 1 -> 2 with cost 100 + 100 = 200"
+    }],
+    "starterCode": {
+        "python": "def findCheapestPrice(n: int, flights: List[List[int]], src: int, dst: int, k: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function findCheapestPrice(n, flights, src, dst, k) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int findCheapestPrice(int n, int[][] flights, int src, int dst, int k) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int findCheapestPrice(int n, vector<vector<int>>& flights, int src, int dst, int k) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 1",
+            "output": "200",
+            "isHidden": false
+        },
+        {
+            "input": "n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 0",
+            "output": "500",
+            "isHidden": false
+        },
+        {
+            "input": "n = 4, flights = [[0,1,100],[1,2,100],[2,3,100],[0,3,500]], src = 0, dst = 3, k = 1",
+            "output": "500",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Hand of Straights",
+    "difficulty": "medium",
+    "description": "Alice has some number of cards and she wants to rearrange the cards into groups so that each group is of size groupSize, and consists of groupSize consecutive cards. Given an integer array hand where hand[i] is the value written on the ith card and an integer groupSize, return true if she can rearrange the cards, or false otherwise.",
+    "examples": [{
+        "input": "hand = [1,2,3,6,2,3,4,7,8], groupSize = 3",
+        "output": "true",
+        "explanation": "Alice's hand can be rearranged as [1,2,3],[2,3,4],[6,7,8]"
+    }],
+    "starterCode": {
+        "python": "def isNStraightHand(hand: List[int], groupSize: int) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function isNStraightHand(hand, groupSize) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean isNStraightHand(int[] hand, int groupSize) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool isNStraightHand(vector<int>& hand, int groupSize) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "hand = [1,2,3,6,2,3,4,7,8], groupSize = 3",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "hand = [1,2,3,4,5], groupSize = 4",
+            "output": "false",
+            "isHidden": false
+        },
+        {
+            "input": "hand = [1,1,2,2,3,3], groupSize = 3",
+            "output": "false",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Car Fleet",
+    "difficulty": "medium",
+    "description": "There are n cars going to the same destination along a one-lane road. The destination is target miles away. Each car i has a constant speed speed[i] (in miles per hour), and initial position position[i] miles towards the target. A car can never pass another car ahead of it, but it can catch up to it and drive bumper to bumper at the same speed. Return the number of car fleets that will arrive at the destination.",
+    "examples": [{
+        "input": "target = 12, position = [10,8,0,5,3], speed = [2,4,1,1,3]",
+        "output": "3",
+        "explanation": "The cars starting at 10 and 8 become a fleet, meeting at 12. The car starting at 0 doesn't catch up to any other car, so it is a fleet by itself. The cars starting at 5 and 3 become a fleet, meeting at 6. The final number of fleets is 3."
+    }],
+    "starterCode": {
+        "python": "def carFleet(target: int, position: List[int], speed: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function carFleet(target, position, speed) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int carFleet(int target, int[] position, int[] speed) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int carFleet(int target, vector<int>& position, vector<int>& speed) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "target = 12, position = [10,8,0,5,3], speed = [2,4,1,1,3]",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "target = 10, position = [3], speed = [3]",
+            "output": "1",
+            "isHidden": false
+        },
+        {
+            "input": "target = 100, position = [0,2,4], speed = [4,2,1]",
+            "output": "1",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Koko Eating Bananas",
+    "difficulty": "medium",
+    "description": "Koko loves to eat bananas. There are n piles of bananas, the ith pile has piles[i] bananas. The guards have gone and will come back in h hours. Koko can decide her bananas-per-hour eating speed of k. Each hour, she chooses some pile of bananas and eats k bananas from that pile. If the pile has less than k bananas, she eats all of them instead and will not eat any more bananas during this hour. Return the minimum integer k such that she can eat all the bananas within h hours.",
+    "examples": [{
+        "input": "piles = [3,6,7,11], h = 8",
+        "output": "4",
+        "explanation": "Koko can eat 4 bananas per hour to eat all bananas within 8 hours"
+    }],
+    "starterCode": {
+        "python": "def minEatingSpeed(piles: List[int], h: int) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function minEatingSpeed(piles, h) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int minEatingSpeed(int[] piles, int h) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int minEatingSpeed(vector<int>& piles, int h) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "piles = [3,6,7,11], h = 8",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "piles = [30,11,23,4,20], h = 5",
+            "output": "30",
+            "isHidden": false
+        },
+        {
+            "input": "piles = [30,11,23,4,20], h = 6",
+            "output": "23",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "K Closest Points to Origin",
+    "difficulty": "medium",
+    "description": "Given an array of points where points[i] = [xi, yi] represents a point on the X-Y plane and an integer k, return the k closest points to the origin (0, 0). The distance between two points is the Euclidean distance: √((x1 - x2)² + (y1 - y2)²). You may return the answer in any order.",
+    "examples": [{
+        "input": "points = [[1,3],[-2,2]], k = 1",
+        "output": "[[-2,2]]",
+        "explanation": "The distance from (-2, 2) to the origin is √8, which is closest among all points"
+    }],
+    "starterCode": {
+        "python": "def kClosest(points: List[List[int]], k: int) -> List[List[int]]:\n    # Write your code here\n    pass",
+        "javascript": "function kClosest(points, k) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public int[][] kClosest(int[][] points, int k) {\n        // Write your code here\n        return new int[][]{};\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<int>> kClosest(vector<vector<int>>& points, int k) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "points = [[1,3],[-2,2]], k = 1",
+            "output": "[[-2,2]]",
+            "isHidden": false
+        },
+        {
+            "input": "points = [[3,3],[5,-1],[-2,4]], k = 2",
+            "output": "[[3,3],[-2,4]]",
+            "isHidden": false
+        },
+        {
+            "input": "points = [[0,1],[1,0]], k = 2",
+            "output": "[[0,1],[1,0]]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Time Based Key-Value Store",
+    "difficulty": "medium",
+    "description": "Design a time-based key-value data structure that can store multiple values for the same key at different time stamps and retrieve the key's value at a certain timestamp. Implement the TimeMap class: TimeMap() Initializes the object, set(key, value, timestamp) stores key with value at given timestamp, get(key, timestamp) returns value at given timestamp.",
+    "examples": [{
+        "input": "timeMap.set('foo', 'bar', 1);\ntimeMap.get('foo', 1);\ntimeMap.get('foo', 3);",
+        "output": "'bar'\n'bar'",
+        "explanation": "Store 'bar' at timestamp 1. Get returns 'bar' at timestamps 1 and 3 since it's the latest value"
+    }],
+    "starterCode": {
+        "python": "class TimeMap:\n    def __init__(self):\n        # Initialize your data structure here\n        pass\n    \n    def set(self, key: str, value: str, timestamp: int) -> None:\n        # Store the key with value at given timestamp\n        pass\n    \n    def get(self, key: str, timestamp: int) -> str:\n        # Return value at given timestamp\n        pass",
+        "javascript": "class TimeMap {\n    constructor() {\n        // Initialize your data structure here\n    }\n    \n    set(key, value, timestamp) {\n        // Store the key with value at given timestamp\n    }\n    \n    get(key, timestamp) {\n        // Return value at given timestamp\n        return '';\n    }\n}",
+        "java": "class TimeMap {\n    public TimeMap() {\n        // Initialize your data structure here\n    }\n    \n    public void set(String key, String value, int timestamp) {\n        // Store the key with value at given timestamp\n    }\n    \n    public String get(String key, int timestamp) {\n        // Return value at given timestamp\n        return \"\";\n    }\n}",
+        "cpp": "class TimeMap {\npublic:\n    TimeMap() {\n        // Initialize your data structure here\n    }\n    \n    void set(string key, string value, int timestamp) {\n        // Store the key with value at given timestamp\n    }\n    \n    string get(string key, int timestamp) {\n        // Return value at given timestamp\n        return \"\";\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "timeMap.set('foo', 'bar', 1); timeMap.get('foo', 1); timeMap.get('foo', 3);",
+            "output": "'bar'\n'bar'",
+            "isHidden": false
+        },
+        {
+            "input": "timeMap.set('foo', 'bar2', 4); timeMap.get('foo', 4); timeMap.get('foo', 5);",
+            "output": "'bar2'\n'bar2'",
+            "isHidden": false
+        },
+        {
+            "input": "timeMap.get('foo', 0);",
+            "output": "''",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Rotting Oranges",
+    "difficulty": "medium",
+    "description": "You are given an m x n grid where each cell can have one of three values: 0 representing an empty cell, 1 representing a fresh orange, or 2 representing a rotten orange. Every minute, any fresh orange that is 4-directionally adjacent to a rotten orange becomes rotten. Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return -1.",
+    "examples": [{
+        "input": "grid = [[2,1,1],[1,1,0],[0,1,1]]",
+        "output": "4",
+        "explanation": "After 4 minutes all oranges become rotten"
+    }],
+    "starterCode": {
+        "python": "def orangesRotting(grid: List[List[int]]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function orangesRotting(grid) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int orangesRotting(int[][] grid) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int orangesRotting(vector<vector<int>>& grid) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[2,1,1],[1,1,0],[0,1,1]]",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "[[2,1,1],[0,1,1],[1,0,1]]",
+            "output": "-1",
+            "isHidden": false
+        },
+        {
+            "input": "[[0,2]]",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Longest Common Subsequence",
+    "difficulty": "medium",
+    "description": "Given two strings text1 and text2, return the length of their longest common subsequence. A subsequence is a sequence that can be derived from another sequence by deleting some or no elements without changing the order of the remaining elements.",
+    "examples": [{
+        "input": "text1 = 'abcde', text2 = 'ace'",
+        "output": "3",
+        "explanation": "The longest common subsequence is 'ace' with length 3"
+    }],
+    "starterCode": {
+        "python": "def longestCommonSubsequence(text1: str, text2: str) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function longestCommonSubsequence(text1, text2) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int longestCommonSubsequence(String text1, String text2) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int longestCommonSubsequence(string text1, string text2) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "text1 = 'abcde', text2 = 'ace'",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "text1 = 'abc', text2 = 'abc'",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "text1 = 'abc', text2 = 'def'",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Count Good Nodes in Binary Tree",
+    "difficulty": "medium",
+    "description": "Given a binary tree root, a node X in the tree is named good if in the path from root to X there are no nodes with a value greater than X. Return the number of good nodes in the binary tree.",
+    "examples": [{
+        "input": "root = [3,1,4,3,null,1,5]",
+        "output": "4",
+        "explanation": "Nodes in {3, 4, 3, 5} are good because the path to each node does not contain a larger value"
+    }],
+    "starterCode": {
+        "python": "def goodNodes(root: TreeNode) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function goodNodes(root) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int goodNodes(TreeNode root) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int goodNodes(TreeNode* root) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[3,1,4,3,null,1,5]",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "[3,3,null,4,2]",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "[1]",
+            "output": "1",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Median of Two Sorted Arrays",
+    "difficulty": "hard",
+    "description": "Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. The overall run time complexity should be O(log(m+n)).",
+    "examples": [{
+        "input": "nums1 = [1,3], nums2 = [2]",
+        "output": "2.00000",
+        "explanation": "Merged array = [1,2,3], median is 2"
+    }],
+    "starterCode": {
+        "python": "def findMedianSortedArrays(nums1: List[int], nums2: List[int]) -> float:\n    # Write your code here\n    pass",
+        "javascript": "function findMedianSortedArrays(nums1, nums2) {\n    // Write your code here\n    return 0.0;\n}",
+        "java": "class Solution {\n    public double findMedianSortedArrays(int[] nums1, int[] nums2) {\n        // Write your code here\n        return 0.0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {\n        // Write your code here\n        return 0.0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "nums1 = [1,3], nums2 = [2]",
+            "output": "2.00000",
+            "isHidden": false
+        },
+        {
+            "input": "nums1 = [1,2], nums2 = [3,4]",
+            "output": "2.80000",
+            "isHidden": false
+        },
+        {
+            "input": "nums1 = [], nums2 = [1]",
+            "output": "1.00000",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Regular Expression Matching",
+    "difficulty": "hard",
+    "description": "Given an input string s and a pattern p, implement regular expression matching with support for '.' and '*' where '.' matches any single character and '*' matches zero or more of the preceding element. The matching should cover the entire input string (not partial).",
+    "examples": [{
+        "input": "s = 'aa', p = 'a*'",
+        "output": "true",
+        "explanation": "'*' means zero or more of the preceding element, 'a', so it matches 'aa'"
+    }],
+    "starterCode": {
+        "python": "def isMatch(s: str, p: str) -> bool:\n    # Write your code here\n    pass",
+        "javascript": "function isMatch(s, p) {\n    // Write your code here\n    return false;\n}",
+        "java": "class Solution {\n    public boolean isMatch(String s, String p) {\n        // Write your code here\n        return false;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    bool isMatch(string s, string p) {\n        // Write your code here\n        return false;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "s = 'aa', p = 'a*'",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "s = 'ab', p = '.*'",
+            "output": "true",
+            "isHidden": false
+        },
+        {
+            "input": "s = 'mississippi', p = 'mis*is*p*.'",
+            "output": "false",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Merge k Sorted Lists",
+    "difficulty": "hard",
+    "description": "You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it.",
+    "examples": [{
+        "input": "lists = [[1,4,5],[1,3,4],[2,6]]",
+        "output": "[1,1,2,3,4,4,5,6]",
+        "explanation": "Merging all lists into one sorted list"
+    }],
+    "starterCode": {
+        "python": "def mergeKLists(lists: List[ListNode]) -> ListNode:\n    # Write your code here\n    pass",
+        "javascript": "function mergeKLists(lists) {\n    // Write your code here\n    return null;\n}",
+        "java": "class Solution {\n    public ListNode mergeKLists(ListNode[] lists) {\n        // Write your code here\n        return null;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    ListNode* mergeKLists(vector<ListNode*>& lists) {\n        // Write your code here\n        return nullptr;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[1,4,5],[1,3,4],[2,6]]",
+            "output": "[1,1,2,3,4,4,5,6]",
+            "isHidden": false
+        },
+        {
+            "input": "[]",
+            "output": "[]",
+            "isHidden": false
+        },
+        {
+            "input": "[[]]",
+            "output": "[]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Reverse Nodes in k-Group",
+    "difficulty": "hard",
+    "description": "Given the head of a linked list, reverse the nodes of the list k at a time, and return the modified list. k is a positive integer and is less than or equal to the length of the linked list. If the number of nodes is not a multiple of k then left-out nodes, in the end, should remain as it is.",
+    "examples": [{
+        "input": "head = [1,2,3,4,5], k = 2",
+        "output": "[2,1,4,3,5]",
+        "explanation": "Reverse in groups of 2: [1,2] -> [2,1], [3,4] -> [4,3], [5] stays as is"
+    }],
+    "starterCode": {
+        "python": "def reverseKGroup(head: ListNode, k: int) -> ListNode:\n    # Write your code here\n    pass",
+        "javascript": "function reverseKGroup(head, k) {\n    // Write your code here\n    return null;\n}",
+        "java": "class Solution {\n    public ListNode reverseKGroup(ListNode head, int k) {\n        // Write your code here\n        return null;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    ListNode* reverseKGroup(ListNode* head, int k) {\n        // Write your code here\n        return nullptr;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "head = [1,2,3,4,5], k = 2",
+            "output": "[2,1,4,3,5]",
+            "isHidden": false
+        },
+        {
+            "input": "head = [1,2,3,4,5], k = 3",
+            "output": "[3,2,1,4,5]",
+            "isHidden": false
+        },
+        {
+            "input": "head = [1], k = 1",
+            "output": "[1]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Trapping Rain Water",
+    "difficulty": "hard",
+    "description": "Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.",
+    "examples": [{
+        "input": "height = [0,1,0,2,1,0,1,3,2,1,2,1]",
+        "output": "6",
+        "explanation": "The elevation map (black bars) can trap 6 units of water (blue sections)"
+    }],
+    "starterCode": {
+        "python": "def trap(height: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function trap(height) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int trap(int[] height) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int trap(vector<int>& height) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[0,1,0,2,1,0,1,3,2,1,2,1]",
+            "output": "6",
+            "isHidden": false
+        },
+        {
+            "input": "[4,2,0,3,2,5]",
+            "output": "9",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2,3,4,5]",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "N-Queens",
+    "difficulty": "hard",
+    "description": "The n-queens puzzle is the problem of placing n queens on an n x n chessboard such that no two queens attack each other. Given an integer n, return all distinct solutions to the n-queens puzzle. Each solution contains a distinct board configuration of the n-queens' placement, where 'Q' and '.' both indicate a queen and an empty space, respectively.",
+    "examples": [{
+        "input": "n = 4",
+        "output": "[['.Q..','...Q','Q...','..Q.'],['..Q.','Q...','...Q','.Q..']]",
+        "explanation": "These are the two possible solutions to the 4-queens puzzle"
+    }],
+    "starterCode": {
+        "python": "def solveNQueens(n: int) -> List[List[str]]:\n    # Write your code here\n    pass",
+        "javascript": "function solveNQueens(n) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<List<String>> solveNQueens(int n) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<vector<string>> solveNQueens(int n) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "4",
+            "output": "[['.Q..','...Q','Q...','..Q.'],['..Q.','Q...','...Q','.Q..']]",
+            "isHidden": false
+        },
+        {
+            "input": "1",
+            "output": "[['Q']]",
+            "isHidden": false
+        },
+        {
+            "input": "2",
+            "output": "[]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Minimum Window Substring",
+    "difficulty": "hard",
+    "description": "Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t (including duplicates) is included in the window. If there is no such substring, return the empty string ''.",
+    "examples": [{
+        "input": "s = 'ADOBECODEBANC', t = 'ABC'",
+        "output": "'BANC'",
+        "explanation": "'BANC' contains all characters from 'ABC' and is the shortest such substring"
+    }],
+    "starterCode": {
+        "python": "def minWindow(s: str, t: str) -> str:\n    # Write your code here\n    pass",
+        "javascript": "function minWindow(s, t) {\n    // Write your code here\n    return '';\n}",
+        "java": "class Solution {\n    public String minWindow(String s, String t) {\n        // Write your code here\n        return \"\";\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    string minWindow(string s, string t) {\n        // Write your code here\n        return \"\";\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "s = 'ADOBECODEBANC', t = 'ABC'",
+            "output": "'BANC'",
+            "isHidden": false
+        },
+        {
+            "input": "s = 'a', t = 'a'",
+            "output": "'a'",
+            "isHidden": false
+        },
+        {
+            "input": "s = 'a', t = 'aa'",
+            "output": "''",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Largest Rectangle in Histogram",
+    "difficulty": "hard",
+    "description": "Given an array of integers heights representing the histogram's bar height where the width of each bar is 1, return the area of the largest rectangle in the histogram.",
+    "examples": [{
+        "input": "heights = [2,1,5,6,2,3]",
+        "output": "10",
+        "explanation": "The largest rectangle has area = 5 * 2 = 10, formed by the bars at indices 2 and 3"
+    }],
+    "starterCode": {
+        "python": "def largestRectangleArea(heights: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function largestRectangleArea(heights) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int largestRectangleArea(int[] heights) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int largestRectangleArea(vector<int>& heights) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[2,1,5,6,2,3]",
+            "output": "10",
+            "isHidden": false
+        },
+        {
+            "input": "[2,4]",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "[1,1,1,1]",
+            "output": "4",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Distinct Subsequences",
+    "difficulty": "hard",
+    "description": "Given two strings s and t, return the number of distinct subsequences of s which equals t. A subsequence of a string is a new string formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters.",
+    "examples": [{
+        "input": "s = 'rabbbit', t = 'rabbit'",
+        "output": "3",
+        "explanation": "Three ways to form 'rabbit': rab_bit, ra_bbit, r_abbit (where _ indicates a deleted character)"
+    }],
+    "starterCode": {
+        "python": "def numDistinct(s: str, t: str) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function numDistinct(s, t) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int numDistinct(String s, String t) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int numDistinct(string s, string t) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "s = 'rabbbit', t = 'rabbit'",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "s = 'babgbag', t = 'bag'",
+            "output": "5",
+            "isHidden": false
+        },
+        {
+            "input": "s = 'aaa', t = 'aa'",
+            "output": "3",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Binary Tree Maximum Path Sum",
+    "difficulty": "hard",
+    "description": "A path in a binary tree is a sequence of nodes where each pair of adjacent nodes in the sequence has an edge connecting them. The path sum is the sum of the node values in the path. Given the root of a binary tree, return the maximum path sum of any non-empty path.",
+    "examples": [{
+        "input": "root = [1,2,3]",
+        "output": "6",
+        "explanation": "The optimal path is 2 -> 1 -> 3 with a path sum of 2 + 1 + 3 = 6"
+    }],
+    "starterCode": {
+        "python": "def maxPathSum(root: TreeNode) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function maxPathSum(root) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int maxPathSum(TreeNode root) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int maxPathSum(TreeNode* root) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,2,3]",
+            "output": "6",
+            "isHidden": false
+        },
+        {
+            "input": "[-10,9,20,null,null,15,7]",
+            "output": "42",
+            "isHidden": false
+        },
+        {
+            "input": "[2,-1]",
+            "output": "2",
+            "isHidden": true
+        }
+    ]
+}, 
+{
+    "title": "Word Ladder",
+    "difficulty": "hard",
+    "description": "A transformation sequence from word beginWord to word endWord using a dictionary wordList is a sequence such that each word in the sequence is in wordList and differs by a single letter from the previous word. Given two words, beginWord and endWord, and a dictionary wordList, return the number of words in the shortest transformation sequence from beginWord to endWord, or 0 if no such sequence exists.",
+    "examples": [{
+        "input": "beginWord = 'hit', endWord = 'cog', wordList = ['hot','dot','dog','lot','log','cog']",
+        "output": "5",
+        "explanation": "One shortest transformation sequence is 'hit' -> 'hot' -> 'dot' -> 'dog' -> 'cog', which has length 5"
+    }],
+    "starterCode": {
+        "python": "def ladderLength(beginWord: str, endWord: str, wordList: List[str]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function ladderLength(beginWord, endWord, wordList) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int ladderLength(String beginWord, String endWord, List<String> wordList) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int ladderLength(string beginWord, string endWord, vector<string>& wordList) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "beginWord = 'hit', endWord = 'cog', wordList = ['hot','dot','dog','lot','log','cog']",
+            "output": "5",
+            "isHidden": false
+        },
+        {
+            "input": "beginWord = 'hit', endWord = 'cog', wordList = ['hot','dot','dog','lot','log']",
+            "output": "0",
+            "isHidden": false
+        },
+        {
+            "input": "beginWord = 'a', endWord = 'c', wordList = ['a','b','c']",
+            "output": "2",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Word Search II",
+    "difficulty": "hard",
+    "description": "Given an m x n board of characters and a list of strings words, return all words on the board. Each word must be constructed from letters of sequentially adjacent cells, where adjacent cells are horizontally or vertically neighboring. The same letter cell may not be used more than once in a word.",
+    "examples": [{
+        "input": "board = [['o','a','a','n'],['e','t','a','e'],['i','h','k','r'],['i','f','l','v']], words = ['oath','pea','eat','rain']",
+        "output": "['eat','oath']",
+        "explanation": "'eat' and 'oath' can be found on the board by connecting adjacent letters"
+    }],
+    "starterCode": {
+        "python": "def findWords(board: List[List[str]], words: List[str]) -> List[str]:\n    # Write your code here\n    pass",
+        "javascript": "function findWords(board, words) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<String> findWords(char[][] board, String[] words) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<string> findWords(vector<vector<char>>& board, vector<string>& words) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "board = [['o','a','a','n'],['e','t','a','e'],['i','h','k','r'],['i','f','l','v']], words = ['oath','pea','eat','rain']",
+            "output": "['eat','oath']",
+            "isHidden": false
+        },
+        {
+            "input": "board = [['a','b'],['c','d']], words = ['abcb']",
+            "output": "[]",
+            "isHidden": false
+        },
+        {
+            "input": "board = [['a']], words = ['a']",
+            "output": "['a']",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Find Median from Data Stream",
+    "difficulty": "hard",
+    "description": "Design a data structure that supports adding integers to the data stream and calculating the median of all elements so far. Implement the MedianFinder class with methods addNum (adds an integer) and findMedian (returns the median of current elements).",
+    "examples": [{
+        "input": "medianFinder.addNum(1);\nmedianFinder.addNum(2);\nmedianFinder.findMedian();\nmedianFinder.addNum(3);\nmedianFinder.findMedian();",
+        "output": "1.5\n2.0",
+        "explanation": "After [1,2] median is 1.5; after [1,2,3] median is 2.0"
+    }],
+    "starterCode": {
+        "python": "class MedianFinder:\n    def __init__(self):\n        # Initialize your data structure here\n        pass\n    \n    def addNum(self, num: int) -> None:\n        # Add a number to the data structure\n        pass\n    \n    def findMedian(self) -> float:\n        # Return the median of current elements\n        pass",
+        "javascript": "class MedianFinder {\n    constructor() {\n        // Initialize your data structure here\n    }\n    \n    addNum(num) {\n        // Add a number to the data structure\n    }\n    \n    findMedian() {\n        // Return the median of current elements\n        return 0.0;\n    }\n}",
+        "java": "class MedianFinder {\n    public MedianFinder() {\n        // Initialize your data structure here\n    }\n    \n    public void addNum(int num) {\n        // Add a number to the data structure\n    }\n    \n    public double findMedian() {\n        // Return the median of current elements\n        return 0.0;\n    }\n}",
+        "cpp": "class MedianFinder {\npublic:\n    MedianFinder() {\n        // Initialize your data structure here\n    }\n    \n    void addNum(int num) {\n        // Add a number to the data structure\n    }\n    \n    double findMedian() {\n        // Return the median of current elements\n        return 0.0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "addNum(1); addNum(2); findMedian(); addNum(3); findMedian();",
+            "output": "1.5\n2.0",
+            "isHidden": false
+        },
+        {
+            "input": "addNum(-1); findMedian(); addNum(-2); findMedian(); addNum(-3); findMedian();",
+            "output": "-1.0\n-1.5\n-2.0",
+            "isHidden": false
+        },
+        {
+            "input": "addNum(1); addNum(1); findMedian();",
+            "output": "1.0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Sliding Window Maximum",
+    "difficulty": "hard",
+    "description": "You are given an array of integers nums, there is a sliding window of size k which is moving from the very left of the array to the very right. You can only see the k numbers in the window. Each time the sliding window moves right by one position, return the maximum element in the window.",
+    "examples": [{
+        "input": "nums = [1,3,-1,-3,5,3,6,7], k = 3",
+        "output": "[3,3,5,5,6,7]",
+        "explanation": "Window position                Max\n[1  3  -1] -3  5  3  6  7       3\n 1 [3  -1  -3] 5  3  6  7       3\n 1  3 [-1  -3  5] 3  6  7       5\n 1  3  -1 [-3  5  3] 6  7       5\n 1  3  -1  -3 [5  3  6] 7       6\n 1  3  -1  -3  5 [3  6  7]      7"
+    }],
+    "starterCode": {
+        "python": "def maxSlidingWindow(nums: List[int], k: int) -> List[int]:\n    # Write your code here\n    pass",
+        "javascript": "function maxSlidingWindow(nums, k) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public int[] maxSlidingWindow(int[] nums, int k) {\n        // Write your code here\n        return new int[]{};\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<int> maxSlidingWindow(vector<int>& nums, int k) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "nums = [1,3,-1,-3,5,3,6,7], k = 3",
+            "output": "[3,3,5,5,6,7]",
+            "isHidden": false
+        },
+        {
+            "input": "nums = [1], k = 1",
+            "output": "[1]",
+            "isHidden": false
+        },
+        {
+            "input": "nums = [1,-1], k = 1",
+            "output": "[1,-1]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Minimum Interval to Include Each Query",
+    "difficulty": "hard",
+    "description": "You are given a 2D integer array intervals, where intervals[i] = [lefti, righti] describes the ith interval starting at lefti and ending at righti (inclusive). The size of an interval is defined as the number of integers it contains, or more formally righti - lefti + 1. You are also given an integer array queries. The answer to the jth query is the size of the smallest interval i such that lefti <= queries[j] <= righti. If no such interval exists, the answer is -1.",
+    "examples": [{
+        "input": "intervals = [[1,4],[2,4],[3,6],[4,4]], queries = [2,3,4,5]",
+        "output": "[3,3,1,4]",
+        "explanation": "The queries are processed as follows:\nQuery = 2: The interval [2,4] is the smallest interval containing 2. The answer is 4 - 2 + 1 = 3.\nQuery = 3: The interval [2,4] is the smallest interval containing 3. The answer is 4 - 2 + 1 = 3.\nQuery = 4: The interval [4,4] is the smallest interval containing 4. The answer is 4 - 4 + 1 = 1.\nQuery = 5: The interval [3,6] is the smallest interval containing 5. The answer is 6 - 3 + 1 = 4."
+    }],
+    "starterCode": {
+        "python": "def minInterval(intervals: List[List[int]], queries: List[int]) -> List[int]:\n    # Write your code here\n    pass",
+        "javascript": "function minInterval(intervals, queries) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public int[] minInterval(int[][] intervals, int[] queries) {\n        // Write your code here\n        return new int[]{};\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<int> minInterval(vector<vector<int>>& intervals, vector<int>& queries) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "intervals = [[1,4],[2,4],[3,6],[4,4]], queries = [2,3,4,5]",
+            "output": "[3,3,1,4]",
+            "isHidden": false
+        },
+        {
+            "input": "intervals = [[2,3],[2,5],[1,8],[20,25]], queries = [2,19,5,22]",
+            "output": "[2,-1,4,6]",
+            "isHidden": false
+        },
+        {
+            "input": "intervals = [[1,1]], queries = [1,2,3]",
+            "output": "[1,-1,-1]",
+            "isHidden": true
+        }
+    ]
+}, {
+    "title": "Reconstruct Itinerary",
+    "difficulty": "hard",
+    "description": "You are given a list of airline tickets where tickets[i] = [fromi, toi] represent the departure and arrival airports of one flight. Reconstruct the itinerary in order and return it. All of the tickets belong to a man who departs from 'JFK', thus, the itinerary must begin with 'JFK'. If there are multiple valid itineraries, you should return the itinerary that has the smallest lexical order when read as a single string.",
+    "examples": [{
+        "input": "tickets = [[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]",
+        "output": "[\"JFK\",\"MUC\",\"LHR\",\"SFO\",\"SJC\"]",
+        "explanation": "One possible reconstruction of the itinerary is: JFK -> MUC -> LHR -> SFO -> SJC"
+    }],
+    "starterCode": {
+        "python": "def findItinerary(tickets: List[List[str]]) -> List[str]:\n    # Write your code here\n    pass",
+        "javascript": "function findItinerary(tickets) {\n    // Write your code here\n    return [];\n}",
+        "java": "class Solution {\n    public List<String> findItinerary(List<List<String>> tickets) {\n        // Write your code here\n        return new ArrayList<>();\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    vector<string> findItinerary(vector<vector<string>>& tickets) {\n        // Write your code here\n        return {};\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[\"MUC\",\"LHR\"],[\"JFK\",\"MUC\"],[\"SFO\",\"SJC\"],[\"LHR\",\"SFO\"]]",
+            "output": "[\"JFK\",\"MUC\",\"LHR\",\"SFO\",\"SJC\"]",
+            "isHidden": false
+        },
+        {
+            "input": "[[\"JFK\",\"SFO\"],[\"JFK\",\"ATL\"],[\"SFO\",\"ATL\"],[\"ATL\",\"JFK\"],[\"ATL\",\"SFO\"]]",
+            "output": "[\"JFK\",\"ATL\",\"JFK\",\"SFO\",\"ATL\",\"SFO\"]",
+            "isHidden": false
+        },
+        {
+            "input": "[[\"JFK\",\"KUL\"],[\"JFK\",\"NRT\"],[\"NRT\",\"JFK\"]]",
+            "output": "[\"JFK\",\"NRT\",\"JFK\",\"KUL\"]",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Burst Balloons",
+    "difficulty": "hard",
+    "description": "You are given n balloons, indexed from 0 to n - 1. Each balloon is painted with a number on it represented by an array nums. You are asked to burst all the balloons. If you burst the ith balloon, you will get nums[i-1] * nums[i] * nums[i+1] coins. If i-1 or i+1 goes out of bounds, treat it as if there is a balloon with a 1 painted on it. Return the maximum coins you can collect by bursting the balloons wisely.",
+    "examples": [{
+        "input": "nums = [3,1,5,8]",
+        "output": "167",
+        "explanation": "Coins = 3*1*5 + 3*5*8 + 1*3*8 + 1*8*1 = 15 + 120 + 24 + 8 = 167"
+    }],
+    "starterCode": {
+        "python": "def maxCoins(nums: List[int]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function maxCoins(nums) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int maxCoins(int[] nums) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int maxCoins(vector<int>& nums) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[3,1,5,8]",
+            "output": "167",
+            "isHidden": false
+        },
+        {
+            "input": "[1,5]",
+            "output": "10",
+            "isHidden": false
+        },
+        {
+            "input": "[7,9,8,0,7,1,3,5]",
+            "output": "1654",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Longest Increasing Path in a Matrix",
+    "difficulty": "hard",
+    "description": "Given an m x n integers matrix, return the length of the longest increasing path in matrix. From each cell, you can either move in four directions: left, right, up, or down. You may not move diagonally or move outside the boundary (i.e., wrap-around is not allowed).",
+    "examples": [{
+        "input": "matrix = [[9,9,4],[6,6,8],[2,1,1]]",
+        "output": "4",
+        "explanation": "The longest increasing path is [1, 2, 6, 9]"
+    }],
+    "starterCode": {
+        "python": "def longestIncreasingPath(matrix: List[List[int]]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function longestIncreasingPath(matrix) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int longestIncreasingPath(int[][] matrix) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int longestIncreasingPath(vector<vector<int>>& matrix) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[9,9,4],[6,6,8],[2,1,1]]",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "[[3,4,5],[3,2,6],[2,2,1]]",
+            "output": "4",
+            "isHidden": false
+        },
+        {
+            "input": "[[1]]",
+            "output": "1",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Swim in Rising Water",
+    "difficulty": "hard",
+    "description": "You are given an n x n integer matrix grid where each value grid[i][j] represents the elevation at that point (i, j). The rain starts to fall and fills any cell that has an elevation lower than its neighbors. You can swim from a cell to another 4-directionally adjacent cell if and only if the elevation of both cells are at most t. Return the least time t until you can reach the bottom right cell (n-1, n-1).",
+    "examples": [{
+        "input": "grid = [[0,2],[1,3]]",
+        "output": "3",
+        "explanation": "At time 3, you can swim from (0,0) to (1,1) through (1,0) or (0,1)"
+    }],
+    "starterCode": {
+        "python": "def swimInWater(grid: List[List[int]]) -> int:\n    # Write your code here\n    pass",
+        "javascript": "function swimInWater(grid) {\n    // Write your code here\n    return 0;\n}",
+        "java": "class Solution {\n    public int swimInWater(int[][] grid) {\n        // Write your code here\n        return 0;\n    }\n}",
+        "cpp": "class Solution {\npublic:\n    int swimInWater(vector<vector<int>>& grid) {\n        // Write your code here\n        return 0;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[[0,2],[1,3]]",
+            "output": "3",
+            "isHidden": false
+        },
+        {
+            "input": "[[0,1,2,3,4],[24,23,22,21,5],[12,13,14,15,16],[11,17,18,19,20],[10,9,8,7,6]]",
+            "output": "16",
+            "isHidden": false
+        },
+        {
+            "input": "[[0]]",
+            "output": "0",
+            "isHidden": true
+        }
+    ]
+},
+{
+    "title": "Serialize and Deserialize Binary Tree",
+    "difficulty": "hard",
+    "description": "Design an algorithm to serialize and deserialize a binary tree. Serialization is the process of converting a data structure or object into a sequence of bits so that it can be stored in a file or memory buffer, or transmitted across a network connection link to be reconstructed later in the same or another computer environment.",
+    "examples": [{
+        "input": "root = [1,2,3,null,null,4,5]",
+        "output": "[1,2,3,null,null,4,5]",
+        "explanation": "After serializing and then deserializing, we get back the same binary tree"
+    }],
+    "starterCode": {
+        "python": "class Codec:\n    def serialize(self, root: TreeNode) -> str:\n        # Write your code here\n        pass\n    \n    def deserialize(self, data: str) -> TreeNode:\n        # Write your code here\n        pass",
+        "javascript": "class Codec {\n    serialize(root) {\n        // Write your code here\n        return '';\n    }\n    \n    deserialize(data) {\n        // Write your code here\n        return null;\n    }\n}",
+        "java": "public class Codec {\n    public String serialize(TreeNode root) {\n        // Write your code here\n        return \"\";\n    }\n    \n    public TreeNode deserialize(String data) {\n        // Write your code here\n        return null;\n    }\n}",
+        "cpp": "class Codec {\npublic:\n    string serialize(TreeNode* root) {\n        // Write your code here\n        return \"\";\n    }\n    \n    TreeNode* deserialize(string data) {\n        // Write your code here\n        return nullptr;\n    }\n};"
+    },
+    "testCases": [
+        {
+            "input": "[1,2,3,null,null,4,5]",
+            "output": "[1,2,3,null,null,4,5]",
+            "isHidden": false
+        },
+        {
+            "input": "[]",
+            "output": "[]",
+            "isHidden": false
+        },
+        {
+            "input": "[1,2]",
+            "output": "[1,2]",
+            "isHidden": true
+        }
+    ]
+}
+]
