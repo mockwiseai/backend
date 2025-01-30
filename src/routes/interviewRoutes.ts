@@ -7,6 +7,8 @@ import {
   deleteInterview,
   generateInterviewLink,
   sendInterviewInvitation,
+  createInterviewQuestion,
+  removeInterviewQuestion
 } from '../controllers/interviewController';
 
 const router = express.Router();
@@ -20,4 +22,6 @@ router.delete('/:id', deleteInterview);
 router.post('/generate-link/:id', generateInterviewLink);
 router.post('/send-invitation', sendInterviewInvitation);
 
+router.post('/questions', createInterviewQuestion);
+router.delete('/questions/:id', removeInterviewQuestion);
 export default router;

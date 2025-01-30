@@ -1,6 +1,6 @@
-import CandidateSubmission from '@models/candidateSubmission.model';
+import CandidateSubmission from '../models/candidateSubmission.model'; 
 import { Request, Response } from 'express';
-import { analyzeBehavioralResponses, analyzeCodingPerformance } from 'utils/aiEvaluation';
+import { analyzeBehavioralResponses, analyzeCodingPerformance } from '../utils/aiEvaluation';
 
 // Evaluate interview answers using AI
 export const evaluateInterview = async (req: Request, res: Response) => {

@@ -7,6 +7,11 @@ import userRoutes from './routes/userRoutes';
 import compilerRoutes from './routes/compilerRoutes';
 import questionRoutes from './routes/questionRoutes';
 import submissionRoutes from './routes/userSubmission.routes';
+import candidateRoutes from './routes/candidateRoutes';
+import invitationRoutes from './routes/invitationRoutes';
+import aiRoutes from './routes/aiRoutes';
+import interviewRoutes from './routes/interviewRoutes';
+
 import { errorHandler } from './middleware/error';
 import logger from './utils/logger';
 import path from 'path';
@@ -40,6 +45,11 @@ app.use('/api/user', userRoutes);
 app.use('/api/compiler', compilerRoutes);
 app.use('/api/questions', questionRoutes);
 app.use('/api/submissions', submissionRoutes);
+app.use('/api/candidates', candidateRoutes);
+app.use('/api/invitation', invitationRoutes);
+app.use('/api/ai', aiRoutes);
+app.use('/api/recruiter/interviews', interviewRoutes);
+
 
 // Health check
 app.get('/health', (req: Request, res: Response) => {

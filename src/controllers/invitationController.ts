@@ -1,6 +1,6 @@
-import InterviewInvitation from '@models/interviewInvitation';
+import InterviewInvitation from '../models/interviewInvitation';
 import { Request, Response } from 'express';
-import { generateUniqueLink } from 'utils/generateLink';
+import { generateUniqueLink } from '../utils/generateLink';
 // Verify interview invitation token
 export const verifyInvitationToken = async (req: Request, res: Response) => {
   try {

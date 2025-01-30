@@ -3,8 +3,9 @@ import Interview from '../models/Interview';
 import InterviewInvitation from '../models/interviewInvitation';
 // import { generateUniqueLink } 
 // import { sendEmail } from '../utils/sendEmail'; 
-import { generateUniqueLink } from 'utils/generateLink';
+import { generateUniqueLink } from '../utils/generateLink'
 import candidateSubmission from '../models/candidateSubmission.model';
+import interviewQuestionModel from '../models/interviewQuestion.model';
 
 // Interview Management (Recruiter Side)
 
@@ -17,6 +18,24 @@ export const createInterview = async (req: Request, res: Response) => {
     res.status(500).json({ success: false, message: 'Error creating interview', error });
   }
 };
+
+export const createInterviewQuestion = async (req: Request, res: Response) => {
+  try {
+    let interviewQuestion = await interviewQuestionModel.create(req.body);
+    res.json({ success: true, data: interviewQuestion });
+  } catch (error) {
+    res.status(500).json({ success: false, message: 'Error adding question', error });
+  }
+}
+
+export const removeInterviewQuestion = async (req: Request, res: Response) => {
+  try {
+    await interviewQuestionModel.findByIdAndDelete(req.params.id);
+    res.json({ success: true, message: 'Question deleted successfully' });
+  } catch (error) {
+    res.status(500).json({ success: false, message: 'Error deleting question', error });
+  }
+}
 
 export const getInterviewById = async (req: Request, res: Response) => {
   try {
