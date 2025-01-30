@@ -577,3 +577,8 @@
 {"level":"info","message":"API available at http://localhost:8000","timestamp":"2025-01-30 12:19:19"}
 {"level":"info","message":"Environment: development","timestamp":"2025-01-30 12:19:19"}
 {"level":"info","message":"Compiler service ready at http://localhost:8000/api/compiler","timestamp":"2025-01-30 12:19:19"}
+{"level":"info","message":"All compiler dependencies verified","timestamp":"2025-01-30 12:31:11"}
+{"level":"info","message":"Server running on port 8000","timestamp":"2025-01-30 12:31:11"}
+{"level":"info","message":"API available at http://localhost:8000","timestamp":"2025-01-30 12:31:11"}
+{"level":"info","message":"Environment: development","timestamp":"2025-01-30 12:31:11"}
+{"level":"info","message":"Compiler service ready at http://localhost:8000/api/compiler","timestamp":"2025-01-30 12:31:11"}

@@ -32,7 +32,7 @@ const InterviewSchema = new Schema<IInterview>(
       {
         questionId: {
           type: mongoose.Schema.Types.ObjectId,
-          refPath: 'questions.questionType',
+          ref: 'InterviewQuestion',
           required: true,
         },
         questionType: {
