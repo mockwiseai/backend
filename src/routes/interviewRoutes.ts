@@ -8,7 +8,8 @@ import {
   generateInterviewLink,
   sendInterviewInvitation,
   createInterviewQuestion,
-  removeInterviewQuestion
+  removeInterviewQuestion,
+  getInterviewByUniqueLink
 } from '../controllers/interviewController';
 
 const router = express.Router();
@@ -20,6 +21,7 @@ router.get('/', getAllInterviews);
 router.put('/:id', updateInterview);
 router.delete('/:id', deleteInterview);
 router.post('/generate-link/:id', generateInterviewLink);
+router.get('/unique-link/:link', getInterviewByUniqueLink);
 router.post('/send-invitation', sendInterviewInvitation);
 
 router.post('/questions', createInterviewQuestion);

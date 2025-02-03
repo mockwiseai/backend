@@ -49,6 +49,17 @@ export const getInterviewById = async (req: Request, res: Response) => {
   }
 };
 
+export const getInterviewByUniqueLink = async (req: Request, res: Response) => {
+  try {
+    const interview = await Interview.findOne({ uniqueLink: req.params.link });
+    if (!interview) {
+      return res.status(404).json({ success: false, message: 'Interview not found' });
+    }
+    res.json({ success: true, data: interview });
+  } catch (error) {
+    res.status(500).json({ success: false, message: 'Error fetching interview', error });
+  }
+}
 export const getAllInterviews = async (_req: Request, res: Response) => {
   try {
     const interviews = await Interview.find();
@@ -105,7 +116,19 @@ export const sendInterviewInvitation = async (req: Request, res: Response) => {
 
 export const startInterview = async (req: Request, res: Response) => {
   try {
-    const { interviewId, email, name } = req.body;
+    const { interviewId: uniqueLink, email, name } = req.body;
+   let interview = await Interview.findOne({ uniqueLink });
+    if (!interview) {
+      return res.status(404).json({ success: false, message: 'Interview not found' });
+    }
+    const interviewId = interview._id;
+
+    // if user is sending a request to start the interview, it means the user has clicked on the link so create an invitation
+    const token = generateUniqueLink(interviewId);
+    const invitation = new InterviewInvitation({ interviewId, email, token, expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), name });
+    await invitation.save();
+    // await sendEmail(email, 'Your Interview Link', `Click here to start: ${token}`);
+
     const candidate = await InterviewInvitation.findOne({ interviewId, email });
     if (!candidate) {
       return res.status(400).json({ success: false, message: 'Invalid invitation' });
