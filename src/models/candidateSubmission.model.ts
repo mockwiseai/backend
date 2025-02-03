@@ -2,8 +2,8 @@ import mongoose, { Document, Schema } from 'mongoose';
 
 export interface ICandidateSubmission extends Document {
     interviewId: mongoose.Types.ObjectId;
-    email: string;  // Candidate's email (no signup required)
-    name: string;   // Candidate's name
+    email: string;
+    name: string;
     answers: {
         questionId: mongoose.Types.ObjectId;
         questionType: 'CodingQuestion' | 'BehavioralQuestion';
@@ -24,6 +24,7 @@ export interface ICandidateSubmission extends Document {
     score: number;
     status: 'pending' | 'completed';
     submittedAt: Date;
+    initiatedAt?: Date,
 }
 
 const CandidateSubmissionSchema = new Schema<ICandidateSubmission>(
@@ -66,6 +67,7 @@ const CandidateSubmissionSchema = new Schema<ICandidateSubmission>(
             enum: ['pending', 'completed'],
             default: 'pending',
         },
+        initiatedAt: { type: Date },
         submittedAt: { type: Date, default: Date.now },
     },
     { timestamps: true }

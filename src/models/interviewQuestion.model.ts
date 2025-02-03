@@ -54,6 +54,7 @@ const InterviewQuestionSchema = new mongoose.Schema({
             isHidden: Boolean,
         },
     ],
+    interviewId: { type: mongoose.Types.ObjectId, ref: 'Interview' },
 });
 
 export default mongoose.model<IInterviewQuestion>(

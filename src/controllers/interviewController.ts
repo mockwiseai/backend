@@ -13,6 +13,14 @@ export const createInterview = async (req: Request, res: Response) => {
   try {
     const interview = new Interview(req.body);
     await interview.save();
+
+    // questions are already created we just need to add them to the interview object
+    let questionsIds = req.body.questions.map((question: any) => question.questionId);
+    // update question interviewId to the current interview
+    await interviewQuestionModel.updateMany({ _id: { $in: questionsIds } }, { interviewId: interview._id });
+    interview.questions = req.body.questions.map((question: any) => ({ questionId: question.questionId, questionType: question.questionType }));
+    await interview.save();
+
     res.status(201).json({ success: true, data: interview });
   } catch (error) {
     res.status(500).json({ success: false, message: 'Error creating interview', error });
@@ -48,6 +56,15 @@ export const getInterviewById = async (req: Request, res: Response) => {
     res.status(500).json({ success: false, message: 'Error fetching interview', error });
   }
 };
+
+export const getInterviewQuestionsById = async (req: Request, res: Response) => {
+  try {
+    const questions = await interviewQuestionModel.find({ interviewId: req.params.id });
+    res.json({ success: true, data: questions });
+  } catch (error) {
+    res.status(500).json({ success: false, message: 'Error fetching questions', error });
+  }
+}
 
 export const getInterviewByUniqueLink = async (req: Request, res: Response) => {
   try {
@@ -117,7 +134,7 @@ export const sendInterviewInvitation = async (req: Request, res: Response) => {
 export const startInterview = async (req: Request, res: Response) => {
   try {
     const { interviewId: uniqueLink, email, name } = req.body;
-   let interview = await Interview.findOne({ uniqueLink });
+    let interview = await Interview.findOne({ uniqueLink });
     if (!interview) {
       return res.status(404).json({ success: false, message: 'Interview not found' });
     }
@@ -133,6 +150,17 @@ export const startInterview = async (req: Request, res: Response) => {
     if (!candidate) {
       return res.status(400).json({ success: false, message: 'Invalid invitation' });
     }
+
+    // check if the candidate has already started the interview
+    let submission = await candidateSubmission.findOne({ interviewId, email });
+    if (submission) {
+      return res.status(400).json({ success: false, message: 'Interview already started' });
+    }
+
+    // create a submission
+    submission = new candidateSubmission({ interviewId, email, name });
+    await submission.save();
+
     res.json({ success: true, message: 'Interview started', data: candidate });
   } catch (error) {
     res.status(500).json({ success: false, message: 'Error starting interview', error });
