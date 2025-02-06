@@ -158,7 +158,7 @@ export const startInterview = async (req: Request, res: Response) => {
     }
 
     // create a submission
-    submission = new candidateSubmission({ interviewId, email, name });
+    submission = new candidateSubmission({ interviewId, email, name, initiatedAt: Date.now() });
     await submission.save();
 
     res.json({ success: true, message: 'Interview started', data: candidate });
@@ -169,7 +169,13 @@ export const startInterview = async (req: Request, res: Response) => {
 
 export const submitInterview = async (req: Request, res: Response) => {
   try {
-    const submission = new candidateSubmission(req.body);
+    const { interviewId, email } = req.body;
+    const submission = await candidateSubmission.findOne({ interviewId, email });
+    if (!submission) {
+      return res.status(404).json({ success: false, message: 'Submission not found' });
+    }
+    submission.status = 'completed';
+    submission.submittedAt = new Date();
     await submission.save();
     res.json({ success: true, message: 'Interview submitted successfully' });
   } catch (error) {

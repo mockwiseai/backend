@@ -39,7 +39,8 @@ export const getInterviewSession = async (req: Request, res: Response) => {
     }));
 
     let submission = await CandidateSubmission.findOne({
-      interviewId: interviewObj._id
+      interviewId: interviewObj._id,
+      email: req.query.email
     })
     
     let startDate = submission?.initiatedAt;
@@ -59,6 +60,7 @@ export const getInterviewSession = async (req: Request, res: Response) => {
       candidates: interviewObj.candidates,
       createdAt: interviewObj.createdAt,
       updatedAt: interviewObj.updatedAt,
+      submission: submission
     };
 
     res.json({
@@ -180,6 +182,13 @@ export const submitAnswer = async (req: Request, res: Response) => {
       });
     }
 
+    let questionExists = submission.answers.find(a => a.questionId === questionId);
+    if (questionExists) {
+      return res.status(400).json({
+        success: false,
+        message: 'Answer already submitted for this question'
+      });
+    }
     // Add new answer
     submission.answers.push({
       questionId,

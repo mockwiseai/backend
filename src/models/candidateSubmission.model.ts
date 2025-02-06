@@ -23,7 +23,7 @@ export interface ICandidateSubmission extends Document {
     };
     score: number;
     status: 'pending' | 'completed';
-    submittedAt: Date;
+    submittedAt?: Date;
     initiatedAt?: Date,
 }
 
@@ -68,7 +68,7 @@ const CandidateSubmissionSchema = new Schema<ICandidateSubmission>(
             default: 'pending',
         },
         initiatedAt: { type: Date },
-        submittedAt: { type: Date, default: Date.now },
+        submittedAt: { type: Date },
     },
     { timestamps: true }
 );
