@@ -31,9 +31,10 @@ const TEMP_DIR = path.join(process.cwd(), 'temp');
 })();
 
 // Middleware
+// ["http://localhost:3000","https://mockwise.org"]
 app.use(
   cors({
-    origin: 'http://localhost:3000', // Allow frontend domain
+    origin: ["http://localhost:3000","https://mockwise.org"],
     credentials: true,
   })
 );

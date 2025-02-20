@@ -4,3 +4,15 @@
 {"level":"info","message":"Environment: development","timestamp":"2025-02-10 11:18:16"}
 {"level":"info","message":"Compiler service ready at http://localhost:8000/api/compiler","timestamp":"2025-02-10 11:18:16"}
 {"level":"info","message":"Cleaned up compiler temp directory","timestamp":"2025-02-10 12:16:54"}
+{"level":"info","message":"All compiler dependencies verified","timestamp":"2025-02-11 17:44:59"}
+{"level":"info","message":"Server running on port 8000","timestamp":"2025-02-11 17:44:59"}
+{"level":"info","message":"API available at http://localhost:8000","timestamp":"2025-02-11 17:44:59"}
+{"level":"info","message":"Environment: development","timestamp":"2025-02-11 17:44:59"}
+{"level":"info","message":"Compiler service ready at http://localhost:8000/api/compiler","timestamp":"2025-02-11 17:44:59"}
+{"level":"info","message":"Cleaned up compiler temp directory","timestamp":"2025-02-11 20:52:44"}
+{"level":"info","message":"All compiler dependencies verified","timestamp":"2025-02-11 20:53:02"}
+{"level":"info","message":"Server running on port 8000","timestamp":"2025-02-11 20:53:02"}
+{"level":"info","message":"API available at http://localhost:8000","timestamp":"2025-02-11 20:53:02"}
+{"level":"info","message":"Environment: development","timestamp":"2025-02-11 20:53:02"}
+{"level":"info","message":"Compiler service ready at http://localhost:8000/api/compiler","timestamp":"2025-02-11 20:53:02"}
+{"level":"info","message":"Cleaned up compiler temp directory","timestamp":"2025-02-11 21:22:47"}
