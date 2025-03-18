@@ -14,9 +14,11 @@ import {
 } from '../controllers/interviewController';
 import { completeInterview, getInterviewProgress, getInterviewSession, submitAnswer, updateInterviewStatus }
   from '../controllers/interviewSessionController';
+import { isAuthenticated } from '../middleware/auth';
 
 const router = express.Router();
 
+router.use(isAuthenticated);
 // Interview management routes
 router.post('/create', createInterview);
 router.get('/:id', getInterviewById);

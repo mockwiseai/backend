@@ -9,9 +9,16 @@ import interviewQuestionModel from '../models/interviewQuestion.model';
 
 // Interview Management (Recruiter Side)
 
-export const createInterview = async (req: Request, res: Response) => {
+interface RequestWithUser extends Request {
+  user?: { userId: string };
+}
+
+export const createInterview = async (req: RequestWithUser, res: Response) => {
   try {
-    const interview = new Interview(req.body);
+    const interview = new Interview({
+      ...req.body,
+      recruiterId: req.user?.userId,
+    });
     await interview.save();
 
     // questions are already created we just need to add them to the interview object
@@ -68,7 +75,7 @@ export const getInterviewQuestionsById = async (req: Request, res: Response) => 
 
 export const getInterviewByUniqueLink = async (req: Request, res: Response) => {
   try {
-    const interview = await Interview.findOne({ uniqueLink: req.params.link });
+    const interview = await Interview.findOne({ uniqueLink: req.params.link }).populate('questions.questionId');
     if (!interview) {
       return res.status(404).json({ success: false, message: 'Interview not found' });
     }
@@ -77,9 +84,11 @@ export const getInterviewByUniqueLink = async (req: Request, res: Response) => {
     res.status(500).json({ success: false, message: 'Error fetching interview', error });
   }
 }
-export const getAllInterviews = async (_req: Request, res: Response) => {
+export const getAllInterviews = async (_req: RequestWithUser, res: Response) => {
   try {
-    const interviews = await Interview.find();
+    const interviews = await Interview.find({
+      recruiterId: _req.user?.userId,
+    }).sort({ createdAt: -1 });
     res.json({ success: true, data: interviews });
   } catch (error) {
     res.status(500).json({ success: false, message: 'Error fetching interviews', error });
