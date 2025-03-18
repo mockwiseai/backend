@@ -152,3 +152,33 @@ export const logout = async (req: Request, res: Response): Promise<void> => {
     });
   }
 };
+
+export const getProfile = async (req: any, res: Response): Promise<void> => {
+  try {
+    const user = await User.findById(req.user?.userId);
+    if (!user) {
+      res.status(404).json({
+        success: false,
+        message: 'User not found',
+      });
+      return;
+    }
+
+    res.json({
+      success: true,
+      data: {
+        user: {
+          id: user._id,
+          name: user.name,
+          email: user.email,
+        },
+      },
+    });
+  } catch (error: any) {
+    res.status(500).json({
+      success: false,
+      message: 'Error getting profile',
+      error: error.message || 'Unknown error occurred',
+    });
+  }
+};

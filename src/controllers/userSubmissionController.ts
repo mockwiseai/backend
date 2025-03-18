@@ -114,9 +114,9 @@ class UserSubmissionController {
         .sort({ submittedAt: -1 }); // Sort by submission time (latest first)
 
       // If no submissions found, return an error
-      if (!submissions || submissions.length === 0) {
-        return sendError(res, 404, 'No submissions found');
-      }
+      // if (!submissions || submissions.length === 0) {
+      //   return sendError(res, 404, 'No submissions found');
+      // }
 
       return sendSuccess(
         res,
