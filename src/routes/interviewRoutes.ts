@@ -18,6 +18,14 @@ import { isAuthenticated } from '../middleware/auth';
 
 const router = express.Router();
 
+/** TRACKING */
+router.get('/session/:interviewId', getInterviewSession);
+router.put('/session/:interviewId/status', updateInterviewStatus);
+router.post('/session/candidate-submissions', submitAnswer);
+router.put('/session/:interviewId/complete', completeInterview);
+router.get('/session/:interviewId/progress/:email', getInterviewProgress);
+
+
 router.use(isAuthenticated);
 // Interview management routes
 router.post('/create', createInterview);
@@ -32,12 +40,5 @@ router.post('/send-invitation', sendInterviewInvitation);
 router.post('/questions', createInterviewQuestion);
 router.get('/questions/:id', getInterviewQuestionsById);
 router.delete('/questions/:id', removeInterviewQuestion);
-
-/** TRACKING */
-router.get('/session/:interviewId', getInterviewSession);
-router.put('/session/:interviewId/status', updateInterviewStatus);
-router.post('/session/candidate-submissions', submitAnswer);
-router.put('/session/:interviewId/complete', completeInterview);
-router.get('/session/:interviewId/progress/:email', getInterviewProgress);
 
 export default router;

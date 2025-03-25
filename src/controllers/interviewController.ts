@@ -89,7 +89,20 @@ export const getAllInterviews = async (_req: RequestWithUser, res: Response) => 
     const interviews = await Interview.find({
       recruiterId: _req.user?.userId,
     }).sort({ createdAt: -1 });
-    res.json({ success: true, data: interviews });
+
+    // candidates name and email
+    const candidates = await InterviewInvitation.find({
+      interviewId: {
+        $in: interviews.map((interview) => interview._id)
+      }
+    })
+
+    let interviewsData = interviews.map((interview: any) => {
+      interview.candidatesData = candidates.filter(candidate => candidate.interviewId.toString() === interview._id.toString());
+      return interview;
+    });
+
+    res.json({ success: true, data: interviewsData });
   } catch (error) {
     res.status(500).json({ success: false, message: 'Error fetching interviews', error });
   }
@@ -170,6 +183,13 @@ export const startInterview = async (req: Request, res: Response) => {
     submission = new candidateSubmission({ interviewId, email, name, initiatedAt: Date.now() });
     await submission.save();
 
+    interview.candidates.push({
+      email,
+      name,
+      status: 'in-progress'
+    })
+
+    await interview.save();
     res.json({ success: true, message: 'Interview started', data: candidate });
   } catch (error) {
     res.status(500).json({ success: false, message: 'Error starting interview', error });
