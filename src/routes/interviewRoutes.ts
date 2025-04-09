@@ -10,7 +10,8 @@ import {
   createInterviewQuestion,
   removeInterviewQuestion,
   getInterviewByUniqueLink,
-  getInterviewQuestionsById
+  getInterviewQuestionsById,
+  getInterviewQuestionById
 } from '../controllers/interviewController';
 import { completeInterview, getInterviewProgress, getInterviewSession, submitAnswer, updateInterviewStatus }
   from '../controllers/interviewSessionController';
@@ -26,6 +27,9 @@ router.put('/session/:interviewId/complete', completeInterview);
 router.get('/session/:interviewId/progress/:email', getInterviewProgress);
 
 
+router.get('/unique-link/:link', getInterviewByUniqueLink);
+router.get('/questions/:id', getInterviewQuestionsById);
+router.get('/question/:id', getInterviewQuestionById);
 router.use(isAuthenticated);
 // Interview management routes
 router.post('/create', createInterview);
@@ -34,11 +38,9 @@ router.get('/', getAllInterviews);
 router.put('/:id', updateInterview);
 router.delete('/:id', deleteInterview);
 router.post('/generate-link/:id', generateInterviewLink);
-router.get('/unique-link/:link', getInterviewByUniqueLink);
 router.post('/send-invitation', sendInterviewInvitation);
 
 router.post('/questions', createInterviewQuestion);
-router.get('/questions/:id', getInterviewQuestionsById);
 router.delete('/questions/:id', removeInterviewQuestion);
 
 export default router;

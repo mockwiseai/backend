@@ -8,7 +8,8 @@
     "dev": "ts-node-dev --respawn src/index.ts",
     "build": "tsc",
     "test": "jest",
-    "populate-db": "ts-node src/scripts/populateDb.ts"
+    "populate-db": "ts-node src/scripts/populateDb.ts",
+    "import-system-design": "ts-node src/scripts/systemdes.ts"
   },
   "keywords": [],
   "author": "",

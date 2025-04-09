@@ -50,4 +50,8 @@ router.post(
   questionController.createBehavioralQuestion
 );
 
+router.get(
+  '/:id',
+  questionController.getQuestionById
+)
 export default router;

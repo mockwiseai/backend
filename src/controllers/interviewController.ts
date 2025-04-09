@@ -54,11 +54,17 @@ export const removeInterviewQuestion = async (req: Request, res: Response) => {
 
 export const getInterviewById = async (req: Request, res: Response) => {
   try {
-    const interview = await Interview.findById(req.params.id);
+    const interview = await Interview.findById(req.params.id).populate('questions.questionId');
     if (!interview) {
       return res.status(404).json({ success: false, message: 'Interview not found' });
     }
-    res.json({ success: true, data: interview });
+    res.json({ success: true, data: {
+      ...interview.toObject(),
+      questions: interview.questions.map((question: any) => ({
+        ...question.questionId.toObject(),
+        questionType: question.questionType,
+      })),
+    } });
   } catch (error) {
     res.status(500).json({ success: false, message: 'Error fetching interview', error });
   }
@@ -68,6 +74,15 @@ export const getInterviewQuestionsById = async (req: Request, res: Response) => 
   try {
     const questions = await interviewQuestionModel.find({ interviewId: req.params.id });
     res.json({ success: true, data: questions });
+  } catch (error) {
+    res.status(500).json({ success: false, message: 'Error fetching questions', error });
+  }
+}
+
+export const getInterviewQuestionById = async (req: Request, res: Response) => {
+  try {
+    const question = await interviewQuestionModel.findById(req.params.id);
+    res.json({ success: true, data: question });
   } catch (error) {
     res.status(500).json({ success: false, message: 'Error fetching questions', error });
   }

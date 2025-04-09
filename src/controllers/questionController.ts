@@ -217,6 +217,25 @@ class QuestionController {
       return sendError(res, 500, 'Internal server error');
     }
   }
+
+  // Get question by ID
+  async getQuestionById(req: Request, res: Response) {
+    let question;
+    try {
+      question = await CodingQuestion.findById(req.params.id);
+      if (!question) {
+        question = await BehavioralQuestion.findById(req.params.id);
+      }
+      if (!question) {
+        return sendError(res, 404, 'Question not found');
+      }
+      return sendSuccess(res, 200, 'Question fetched successfully', question);
+    }
+    catch (error) {
+      console.error('Error in getQuestionById:', error);
+      return sendError(res, 500, 'Internal server error');
+    }
+  }
 }
 
 export default new QuestionController();
