@@ -3,6 +3,7 @@
 import { Request, Response } from 'express';
 import Interview from '../models/Interview';
 import CandidateSubmission from '../models/candidateSubmission.model';
+import mongoose from 'mongoose';
 
 // Get interview details with questions
 export const getInterviewSession = async (req: Request, res: Response) => {
@@ -163,7 +164,15 @@ export const updateInterviewStatus = async (req: Request, res: Response) => {
 // Submit answer for a question
 export const submitAnswer = async (req: Request, res: Response) => {
   try {
-    const { interviewId, questionId, questionType, response, email, name } = req.body;
+    const { interviewId, email, name, answers } = req.body;
+
+    // Check if we're getting the correct structure
+    if (!answers || !Array.isArray(answers)) {
+      return res.status(400).json({
+        success: false,
+        message: 'Missing or invalid answers array'
+      });
+    }
 
     // Find existing submission or create new one
     let submission = await CandidateSubmission.findOne({
@@ -182,26 +191,79 @@ export const submitAnswer = async (req: Request, res: Response) => {
       });
     }
 
-    let questionExists = submission.answers.find(a => a.questionId === questionId);
-    if (questionExists) {
-      return res.status(400).json({
-        success: false,
-        message: 'Answer already submitted for this question'
-      });
-    }
-    // Add new answer
-    submission.answers.push({
-      questionId,
-      questionType,
-      response,
-      // Add test case results if it's a coding question
-      testCaseResults: questionType === 'CodingQuestion' ? [] : undefined
-    });
+    let newAnswersCount = 0;
 
+    // Process each answer in the answers array
+    for (const answer of answers) {
+      const { questionId, questionType, response } = answer;
+      
+      // Convert string ID to ObjectId (this is crucial!)
+      const questionObjectId = new mongoose.Types.ObjectId(questionId);
+      
+      // Check if question already answered
+      let questionExists = submission.answers.find(a => 
+        a.questionId.toString() === questionObjectId.toString()
+      );
+      
+      if (questionExists) {
+        return res.status(400).json({
+          success: false,
+          message: 'Answer already submitted for this question'
+        });
+      }
+      
+      // Add the new answer with proper ObjectId conversion
+      submission.answers.push({
+        questionId: questionObjectId,
+        questionType,
+        response,
+        testCaseResults: questionType === 'CodingQuestion' ? [] : undefined
+      });
+
+      // Increment counter for new answers
+      newAnswersCount++;
+    }
+
+    submission.status = 'completed';
+    submission.submittedAt = new Date();
     await submission.save();
 
+    // Now update the candidate's status in the Interview document
+    const interviewObjectId = new mongoose.Types.ObjectId(interviewId);
+    
+    const interview = await mongoose.model('Interview').findById(interviewObjectId);
+    
+    if (interview) {
+      // Find the candidate in the candidates array
+      const candidateIndex = interview.candidates.findIndex(
+        ( candidate: { email: any; }) => candidate.email === email
+      );
+      
+      if (candidateIndex !== -1) {
+        // Update the candidate's status to 'completed'
+        interview.candidates[candidateIndex].status = 'completed';
+
+        // Update the candidate's submission date
+        interview.candidates[candidateIndex].submittedAt = new Date();
+
+        // Increment question counters
+        interview.candidates[candidateIndex].questionsAttempted += newAnswersCount;
+        interview.candidates[candidateIndex].questionsCompleted += newAnswersCount;
+        
+        // If they had questions in progress, reduce that count (optional)
+        if (interview.candidates[candidateIndex].questionsInProgress >= newAnswersCount) {
+          interview.candidates[candidateIndex].questionsInProgress -= newAnswersCount;
+        } else {
+          interview.candidates[candidateIndex].questionsInProgress = 0;
+        }
+        await interview.save();
+      }
+    }
+
+    console.log('Submission saved:', submission);
     res.json({ success: true, data: submission });
   } catch (error) {
+    console.log(error);
     res.status(500).json({
       success: false,
       message: 'Error submitting answer',

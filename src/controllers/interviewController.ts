@@ -201,7 +201,11 @@ export const startInterview = async (req: Request, res: Response) => {
     interview.candidates.push({
       email,
       name,
-      status: 'in-progress'
+      status: 'in-progress',
+      questionsAttempted: 0,
+      questionsCompleted: 0,
+      questionsInProgress: 0,
+      submittedAt: null
     })
 
     await interview.save();

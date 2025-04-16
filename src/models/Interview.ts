@@ -13,6 +13,10 @@ export interface IInterview extends Document {
   candidates: {
     email: string;
     name: string;
+    questionsAttempted: number;
+    questionsCompleted: number;
+    questionsInProgress: number;
+    submittedAt?: Date | null;
     status: 'pending' | 'completed' | 'in-progress';
   }[];
   status: 'draft' | 'published' | 'completed';
@@ -49,6 +53,10 @@ const InterviewSchema = new Schema<IInterview>(
       {
         email: { type: String, required: true },
         name: { type: String, required: true },
+        questionsAttempted: { type: Number, default: 0 },
+        questionsCompleted: { type: Number, default: 0 },
+        questionsInProgress: { type: Number, default: 0 },
+        submittedAt: { type: Date, nullable: true, allowNull: true },
         status: {
           type: String,
           enum: ['pending', 'completed', 'in-progress'],
