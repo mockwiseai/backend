@@ -11,6 +11,7 @@ export interface IInterviewQuestion extends Document {
     title: string;
     difficulty: 'easy' | 'medium' | 'hard';
     description: string;
+    questionType: 'CodingQuestion' | 'SystemDesign' | 'BehavioralQuestion';
     examples: {
         input: string;
         output: string;
@@ -34,6 +35,12 @@ const InterviewQuestionSchema = new mongoose.Schema({
         required: true,
     },
     description: { type: String, required: true },
+    questionType: {
+        type: String,
+        enum: ['CodingQuestion', 'SystemDesign', 'BehavioralQuestion'],
+        default: 'CodingQuestion',
+        required: true,
+    },
     examples: [
         {
             input: String,

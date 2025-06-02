@@ -7,6 +7,8 @@ export interface IInterviewInvitation extends Document {
   token: string;
   expiresAt: Date;
   status: 'pending' | 'accepted' | 'expired';
+  questionsAttempted?: number;
+  submittedAt?: Date;
 }
 
 const InterviewInvitationSchema = new Schema<IInterviewInvitation>(
@@ -25,6 +27,8 @@ const InterviewInvitationSchema = new Schema<IInterviewInvitation>(
       enum: ['pending', 'accepted', 'expired'],
       default: 'pending',
     },
+    questionsAttempted: { type: Number, default: 0 },
+    submittedAt: { type: Date, nullable: true, allowNull: true },
   },
   { timestamps: true }
 );
