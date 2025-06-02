@@ -259,8 +259,6 @@ export const submitAnswer = async (req: Request, res: Response) => {
         await interview.save();
       }
     }
-
-    console.log('Submission saved:', submission);
     res.json({ success: true, data: submission });
   } catch (error) {
     console.log(error);

@@ -15,24 +15,35 @@ interface RequestWithUser extends Request {
 
 export const createInterview = async (req: RequestWithUser, res: Response) => {
   try {
+    // Validate schedule date
+    if (!req.body.scheduleDate) {
+      return res.status(400).json({
+        success: false,
+        message: "Schedule date is required",
+      })
+    }
+
     const interview = new Interview({
       ...req.body,
       recruiterId: req.user?.userId,
-    });
-    await interview.save();
+    })
+    await interview.save()
 
     // questions are already created we just need to add them to the interview object
-    let questionsIds = req.body.questions.map((question: any) => question.questionId);
+    const questionsIds = req.body.questions.map((question: any) => question.questionId);
     // update question interviewId to the current interview
-    await interviewQuestionModel.updateMany({ _id: { $in: questionsIds } }, { interviewId: interview._id });
-    interview.questions = req.body.questions.map((question: any) => ({ questionId: question.questionId, questionType: question.questionType }));
-    await interview.save();
+    await interviewQuestionModel.updateMany({ _id: { $in: questionsIds } }, { interviewId: interview._id })
+    interview.questions = req.body.questions.map((question: any) => ({ 
+      questionId: question.questionId, 
+      questionType: question.questionType 
+    }));
+    await interview.save()
 
-    res.status(201).json({ success: true, data: interview });
+    res.status(201).json({ success: true, data: interview })
   } catch (error) {
-    res.status(500).json({ success: false, message: 'Error creating interview', error });
+    res.status(500).json({ success: false, message: "Error creating interview", error })
   }
-};
+}
 
 export const createInterviewQuestion = async (req: Request, res: Response) => {
   try {
