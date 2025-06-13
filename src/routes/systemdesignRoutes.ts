@@ -14,7 +14,7 @@ import { isAuthenticated } from 'middleware/auth';
 const router = express.Router();
 
 // Public routes
-router.use(isAuthenticated)
+// router.use(isAuthenticated)
 router.get('/', getAllSystemDesignQuestions);
 router.get('/stats', getSystemDesignStats);
 router.get('/id/:id', getSystemDesignQuestionById);

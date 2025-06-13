@@ -11,7 +11,7 @@ import candidateRoutes from './routes/candidateRoutes';
 import invitationRoutes from './routes/invitationRoutes';
 import aiRoutes from './routes/aiRoutes';
 import interviewRoutes from './routes/interviewRoutes';
-
+import systemdesignRoutes from './routes/systemdesignRoutes'
 import { errorHandler } from './middleware/error';
 import logger from './utils/logger';
 import path from 'path';
@@ -50,7 +50,7 @@ app.use('/api/candidates', candidateRoutes);
 app.use('/api/invitation', invitationRoutes);
 app.use('/api/ai', aiRoutes);
 app.use('/api/recruiter/interviews', interviewRoutes);
-
+app.use('/api/systemdesign', interviewRoutes);
 
 // Health check
 app.get('/health', (req: Request, res: Response) => {

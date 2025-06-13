@@ -16,6 +16,7 @@ export const getAllSystemDesignQuestions = async (req: Request, res: Response): 
     } = req.query;
 
     // Build query based on provided filters
+    console.log("System Design")
     const query: any = { show: true };
     
     if (difficulty) query.difficulty = difficulty;

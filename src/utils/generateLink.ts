@@ -8,6 +8,8 @@ export const generateUniqueLink = (interviewId: string): string => {
   return `${config.frontendUrl}/interview?token=${token}&id=${interviewId}`;
 };
 
+
+
 // Function to send email invitations
 // export const sendEmail = async (to: string, subject: string, text: string): Promise<void> => {
 //   const transporter = nodemailer.createTransport({

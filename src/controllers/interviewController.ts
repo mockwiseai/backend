@@ -190,8 +190,8 @@ export const startInterview = async (req: Request, res: Response) => {
 
     // if user is sending a request to start the interview, it means the user has clicked on the link so create an invitation
     const token = generateUniqueLink(interviewId);
-    const invitation = new InterviewInvitation({ interviewId, email, token, expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), name });
-    await invitation.save();
+    // const invitation = new InterviewInvitation({ interviewId, email, token, expiresAt: new Date(Date.now() + 7 * 24 * 60 * 60 * 1000), name });
+    // await invitation.save();
     // await sendEmail(email, 'Your Interview Link', `Click here to start: ${token}`);
 
     const candidate = await InterviewInvitation.findOne({ interviewId, email });
