@@ -13,6 +13,7 @@ import aiRoutes from './routes/aiRoutes';
 import interviewRoutes from './routes/interviewRoutes';
 import systemdesignRoutes from './routes/systemdesignRoutes'
 import { errorHandler } from './middleware/error';
+import userProctoring from './routes/proctoringRoutes'
 import logger from './utils/logger';
 import path from 'path';
 import fs from 'fs/promises';
@@ -49,6 +50,7 @@ app.use('/api/submissions', submissionRoutes);
 app.use('/api/candidates', candidateRoutes);
 app.use('/api/invitation', invitationRoutes);
 app.use('/api/ai', aiRoutes);
+app.use('/api', userProctoring);
 app.use('/api/recruiter/interviews', interviewRoutes);
 app.use('/api/systemdesign', interviewRoutes);
 

@@ -1,29 +1,63 @@
-import ProctoringLog from '@models/proctoringLog.model';
+import ProctoringLog from '../models/proctoringLog.model';
 import { Request, Response } from 'express';
-
+import mongoose from "mongoose";
 
 // Log a proctoring event (e.g., tab-switch, face detection, audio alert)
+// Update the logProctoringEvent function in your backend
+// In your backend controller (proctoringLog.controller.ts)
 export const logProctoringEvent = async (req: Request, res: Response) => {
   try {
-    const { interviewId, email, name, eventType, details } = req.body;
+    console.log("Received proctoring log request:", req.body);
+
+    const { interviewId, email, eventType } = req.body;
+
+    if (!interviewId || !email || !eventType) {
+      console.log("Missing fields:", {
+        received: { interviewId, email, eventType },
+        missing: {
+          interviewId: !interviewId,
+          email: !email,
+          eventType: !eventType,
+        },
+      });
+      return res.status(400).json({
+        success: false,
+        message:
+          "Missing required fields: " +
+          (!interviewId ? "interviewId " : "") +
+          (!email ? "email " : "") +
+          (!eventType ? "eventType" : ""),
+      });
+    }
 
     const proctoringLog = new ProctoringLog({
       interviewId,
       email,
-      name,
+      name: req.body.name || "Unknown Candidate",
       eventType,
-      details,
-      eventTimestamp: new Date(),
+      details: req.body.details || "No additional details",
+      eventTimestamp: req.body.timestamp || new Date(),
     });
 
     await proctoringLog.save();
 
-    res.status(201).json({ success: true, message: 'Proctoring event logged' });
-  } catch (error) {
+    console.log("Successfully saved proctoring log:", proctoringLog);
+
+    res.status(201).json({
+      success: true,
+      message: "Event logged successfully",
+      logId: proctoringLog._id,
+    });
+  } catch (error:any) {
+    console.error("Error saving proctoring log:", {
+      error: error.message,
+      stack: error.stack,
+      body: req.body,
+    });
     res.status(500).json({
       success: false,
-      message: 'Error logging proctoring event',
-      error: error
+      message: "Internal server error while logging proctoring event",
+      error: process.env.NODE_ENV === "development" ? error.message : undefined,
     });
   }
 };

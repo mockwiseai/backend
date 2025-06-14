@@ -1,7 +1,7 @@
 import mongoose, { Document, Schema } from 'mongoose';
 
 export interface IProctoringLog extends Document {
-  interviewId: mongoose.Types.ObjectId;
+  interviewId: string;
   email: string;
   name: string;
   eventType: string;
@@ -12,8 +12,7 @@ export interface IProctoringLog extends Document {
 const ProctoringLogSchema = new Schema<IProctoringLog>(
   {
     interviewId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: 'Interview',
+      type: String,
       required: true,
     },
     email: { type: String, required: true },
